@@ -11,9 +11,12 @@
   <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
   <!-- Core theme CSS (includes Bootstrap)-->
   <link href="css/styles.css" rel="stylesheet" />
+
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.4.0/dist/leaflet.css"
   integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
   crossorigin="">
+  <script src="http://unpkg.com/leaflet@latest/dist/leaflet.js"></script>
+  <script src="js/leaflet-providers.js"></script>
 </head>
 
 <body>
@@ -139,18 +142,26 @@
   <script src="https://unpkg.com/leaflet@1.4.0/dist/leaflet.js"
   integrity="sha512-QVftwZFqvtRNi0ZyCtsznlKSWOStnDORoefr1enyq5mVL4tmKB3S/EnC3rRJcxCPavG10IcrVGSmPh6Qw5lwrg=="
   crossorigin=""></script>
+  <script src="js/leaflet-providers.js"></script>
   <script>
 
     var map = L.map('map').setView([44.49491, 11.34271], 15);
 
-    L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
-    maxZoom: 19,
-    attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
-    }).addTo(map);
+    var Stamen_Watercolor = L.tileLayer('https://stamen-tiles-{s}.a.ssl.fastly.net/watercolor/{z}/{x}/{y}.{ext}', {
+	    attribution: 'Map tiles by <a href="http://stamen.com">Stamen Design</a>, <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a> &mdash; Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+	    subdomains: 'abcd',
+	    minZoom: 1,
+	    maxZoom: 16,
+	    ext: 'jpg'
+    });
+
+    L.tileLayer.provider('Stamen.Watercolor').addTo(map);
 
     var marker = L.marker([44.49072, 11.33469]).addTo(map);
+    var marker2 = L.marker([44.48991, 11.33439]).addTo(map);
 
     var popup = marker.bindPopup('<b>Pasolini"s house</b><br />Via Nosadella, 48');
+    var popup2 = marker2.bindPopup('<b>Palazzo Albergati</b><br />Via Saragozza, 26');
 
     popup.openPopup();
 
