@@ -625,6 +625,12 @@ progress {
   color: #6c757d;
 }
 
+.eyes{
+    max-width: 100%;
+    height: auto;
+}
+
+
 .container,
 .container-fluid,
 .container-xxl,
