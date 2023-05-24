@@ -629,7 +629,17 @@ progress {
     max-width: 100%;
     height: auto;
 }
-
+.womanpaint{
+  max-width: 100%;
+  height: auto;
+}
+.figuresize{
+  font-size: 60%;
+}
+.celingpaint{
+  max-width: 50%;
+  height: auto;
+}
 
 .container,
 .container-fluid,
