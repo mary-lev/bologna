@@ -1,0 +1,258 @@
+* {
+    /* background-color: antiquewhite; */
+    background-image: url("../assets/img/aldrovandi/paper-gf68c0619c_1920.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+body {
+    display: flex;
+    padding: 10px;
+    margin: 10px;
+    border: 10px;
+    /* background-color: #F3E9D2; */
+    color: #5E503F;
+    overflow-x: hidden;
+
+}
+
+.context {
+    margin-left: 40px;
+}
+
+.container {
+    /* font-family: 'Rosarivo', serif; */
+    font-family: 'EB Garamond', serif;
+    /* color:saddlebrown; */
+    /* width: 50%; */
+}
+
+.row {}
+
+.col-lg-6 {
+    column-count: 2;
+    column-gap: 40px;
+    padding: 20px;
+    /* width: 50%; */
+}
+
+header {
+    width: auto;
+}
+
+.navbar-brand {
+    font-family: 'MedievalSharp', cursive;
+    /* font-family: 'Metamorphous', cursive; */
+    font-size: 48px;
+    font-weight: bold;
+    color: saddlebrown;
+    margin-bottom: 20px;
+    text-transform: capitalize;
+    text-decoration: double;
+    text-overflow: ellipsis;
+    text-align: center;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: rgb(168, 149, 149);
+}
+
+header h1 {
+    display: none;
+}
+
+.section {
+    display: flex;
+    /* width: 50%; */
+}
+
+sup {
+    vertical-align: baseline;
+}
+
+i {
+    /* font-style: italic; */
+    font-style: normal;
+}
+
+ul {
+    list-style-type: upper-roman;
+    list-style-position: inside;
+    padding-inline-start: 0px;
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+    border: thick double saddlebrown;
+}
+
+::marker {
+    color: saddlebrown;
+    font-weight: bold;
+}
+
+.navbar {
+    margin-left: 20px;
+}
+
+/* .navbar-brand {
+    font-family: 'Rosarivo', serif;
+    font-variant: small-caps;
+    font-size: 24px;
+    font-weight: bold;
+} */
+
+.nav-link {
+    font-family: 'Rosarivo', serif;
+    font-weight: bold;
+    font-variant: small-caps;
+    color: saddlebrown;
+    font-size: 18px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.nav-item {
+    padding: 0 0;
+}
+
+.dropdown-item {
+    display: block;
+    font-family: 'Rosarivo', serif;
+    font-weight: bold;
+    font-variant: small-caps;
+    margin-left: 5px;
+    padding-inline-start: 25px;
+}
+
+.navbar-toggler {
+    display: none;
+}
+
+h2 {
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 5px;
+    color: saddlebrown;
+    font-weight: bold;
+    font-variant: small-caps;
+    font-size: 48px;
+    font-family: 'Metamorphous', serif;
+}
+
+p {
+    font-size: 18px;
+    line-height: 110%;
+    text-align: justify;
+    margin-bottom: 0px;
+    margin-top: 3px;
+    font-weight: 400;
+}
+
+p a {
+    /* text-decoration: underline; */
+    /* font-weight: bold; */
+    letter-spacing: 0.3em;
+    background-color: none;
+}
+
+p::first-letter {
+    font-size: 2em;
+    font-weight: bold;
+    font-family: 'MedievalSharp', serif;
+    vertical-align: top;
+    float: left;
+    margin: 0 10px 0 0;
+    line-height: normal;
+    color: sienna;
+    /* border: 2px solid saddlebrown; */
+}
+
+a {
+    text-decoration: none;
+    color: sienna;
+}
+
+a:visited {
+    color: saddlebrown;
+}
+
+.author {
+    font-family: 'MedievalSharp', serif;
+    font-weight: normal;
+    color: saddlebrown;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+.author::first-letter,
+.triangle::first-letter,
+.lead::first-letter,
+.text-white-100-no-opacity::first-letter {
+    font-size: 1em;
+    float: none;
+    vertical-align: baseline;
+    margin: auto;
+}
+
+.text-white-100-no-opacity {
+    /* font-family: "Metamorphous", cursive;
+    color: saddlebrown;
+    text-align: center; */
+    display: none;
+}
+
+
+.vignette {
+    height: 200px;
+    color: saddlebrown;
+    display: none;
+}
+
+iframe {
+    display: none;
+}
+
+.one-column .col-lg-6 {
+    column-count: 1;
+    width: 50%;
+    text-align: center;
+}
+
+.triangle {
+    height: 360px;
+    /* max-width: 800px; */
+    position: relative;
+}
+
+.triangle [class*=shape] {
+    width: 50%;
+    height: 100%;
+    shape-outside: var(--p);
+    clip-path: var(--p);
+
+}
+
+.left-shape {
+    /* --p: polygon(0% 100%, 0% 0%, 100% 0%); */
+    --p: polygon(0% 0%, 100% 100%, 0% 100%);
+    float: left;
+}
+
+.right-shape {
+    /* --p: polygon(0% 0%, 100% 0%, 100% 100%); */
+    --p: polygon(100% 0%, 100% 100%, 0% 100%);
+    float: right;
+}
+
+.triangle p {
+    position: center;
+    top: 50px;
+}
+
+.bg-dark {
+    display: block;
+}
