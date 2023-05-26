@@ -1,161 +1,267 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="" />
-        <meta name="author" content="" />
-        <title>Discovering Bologna</title>
-        <!-- Favicon-->
-        <link rel="icon" type="image/x-icon" href="../assets/favicon.ico" />
-        <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="../css/styles.css" rel="stylesheet" />
-    </head>
-    <body>
-        <!-- Responsive navbar-->
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <div class="container">
-                <a class="navbar-brand" href="../index.html">Discovering Bolona</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-                
-                <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">    
-                    <ul class="navbar-nav">
-                        <li class="nav-item dropdown">
-                          <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">Sites</a>
-                          <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
-                            <a class="dropdown-item" href="#pk">Piazza Aldrovandi</a>
-                            <a class="dropdown-item" href="#pk">Via dell'Independenza</a>
-                            <a class="dropdown-item" href="#pk">Quartiere Saragozza</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="#pk">Guardini</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="#pk">Mercati</a>
-                          </ul>
-                        </li>
 
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                              University
-                            </a>
-                            <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
-                                <a class="dropdown-item" href="index.html#aldrovandi">Ulisse Aldrovandi</a>
-                                <a class="dropdown-item" href="index.html#pasolini">Pier Paolo Pasolini</a>
-                                <a class="dropdown-item" href="index.html#eco">Umberto Eco</a>
-                            </ul>
-                          </li>
-                        
-                          <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                              Another topic
-                            </a>
-                            <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
-                              <a class="dropdown-item" href="#pk">Article 1</a>
-                              <a class="dropdown-item" href="#pk">Article 2</a>
-                              <a class="dropdown-item" href="#pk">Article 3</a>
-                            </ul>
-                          </li>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+  <title>Discovering Bologna</title>
+  <!-- Favicon-->
+  <link rel="icon" type="image/x-icon" href="../assets/favicon.ico" />
+  <!-- Core theme CSS (includes Bootstrap)-->
+  <link id="pagestyle" rel="stylesheet" type="text/css" href="../css/styles.css">
+  <script>
+    function switchStyle(sheet) {
+      document.getElementById('pagestyle').setAttribute('href', sheet);
+    }
+  </script>
+</head>
 
-                          <li class="nav-item">
-                            <a class="nav-link" href="../map.html" role="button">Map</a>
-                          </li>
+<body>
+  <!-- Responsive navbar-->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="../index.html">Discovering Bolona</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span
+          class="navbar-toggler-icon"></span></button>
 
-                          <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                              About
-                            </a>
-                            <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
-                              <a class="dropdown-item" href="#pk">Documentation</a>
-                              <a class="dropdown-item" href="#pk">About us</a>
-                              <a class="nav-link" title="Star on GitHub" href="https://github.com/mary-lev/bologna" target="_blank">GitHub</a>
-                            </ul>
-                          </li>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+        <ul class="navbar-nav">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">Sights</a>
+            <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+              <a class="dropdown-item" href="../sights/petronio.html">The Church of San Petronio in Bologna</a> <a
+                class="dropdown-item" href="../sights/secrets.html">Seven Secrets of Bologna</a> <a
+                class="dropdown-item" href="../sights/torri.html">Garisenda and Asinell</a>
+            </ul>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              University
+            </a>
+            <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+              <a class="dropdown-item" href="index.html#aldrovandi">Ulisse Aldrovandi</a>
+              <a class="dropdown-item" href="index.html#pasolini">Pier Paolo Pasolini</a>
+              <a class="dropdown-item" href="index.html#eco">Umberto Eco</a>
+            </ul>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              Women </a>
+            <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+              <a class="dropdown-item" href="../Women/Artemisia_Gentileschi.html">Artemisia Gentileschi</a>
+              <a class="dropdown-item" href="../Women/Laura_Bassi.html">Laura Bassi</a>
+              <a class="dropdown-item" href="../Women/Morandi_Manzolini.html">Anna Morandi Manzolini</a>
+            </ul>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="../map.html" role="button">Map</a>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              About
+            </a>
+            <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+              <a class="dropdown-item" href="#pk">Documentation</a>
+              <a class="dropdown-item" href="#pk">About us</a>
+              <a class="nav-link" title="Star on GitHub" href="https://github.com/mary-lev/bologna"
+                target="_blank">GitHub</a>
+            </ul>
+          </li>
 
 
-                        </ul>
-                </div>
-            </div>
-        </nav>
-        <!-- Header - set the background image for the header in the line below-->
-        <header class="py-5 bg-image-full" style="background-image: url('../assets/img/bologna.jpg')">
-            <div class="text-center my-5">
-                <h1 class="text-title text-white fs-3 fw-bolder">Discovering Bologna</h1>
-                <p class="text-white-100-no-opacity mb-0">A Journey Through History, Culture & Innovation</p>
-            </div>
-        </header>
-        <!-- Content section-->
-        <section class="py-5">
-            <div class="container my-5">
-                <div class="row justify-content-center">
-                    <div class="col-lg-6">
-                        <h2>The Dragon of Bologna</h2>
-                        <h4>Author: Dr. Elizabethanne Boran, Librarian of the Edward Worth Library, Dublin</h4>
-                        <p>One of Ulisse Aldrovandi’s most treasured exhibits was the ‘Dragon of Bologna’, a specimen which was reputed to have been killed in 1572 and which Aldrovandi later exhibited in his public museum. He naturally included it in his book on the history of serpents and dragons and it has attracted attention ever since from scholars who have sought to identify what type of animal the ‘Dragon of Bologna’ was and what its appearance signified.</p>
-                        <p><img src="../assets/img/Fig.1.Aldrovandi_v.7_p.404.jpg" /></p>
-                        <p>The ‘Dragon of Bologna’ in Ulisse Aldrovandi, <em>Serpentum, et draconum historiæ libri duo </em>(Bologna, 1640), p. 404.</p>
-                        <p>Aldrovandi presents two different types of evidence: a description of the dragon and two images, one of which we see here and another, in colour and similar, in his <em>Tavole di animali</em> (a work not in the Worth Library but available online). His description and images provide vital clues as to the real origin of the ‘Dragon of Bologna’ – and to the popularity of dragons in early modern museums. Since we know that Aldrovandi insisted on pictorial accuracy we can be fairly sure that his representation of the ‘Dragon of Bologna’ was a faithful representation.</p>
-                        <p>However, as Phil Senter, LaRhonda C. Hill and Brandon J. Moton have convincingly argued, though the image might be faithful, the object itself was a fake.<a href="#_ftn1" name="_ftnref1">[1]</a> By analysing the images and Aldrovandi’s detailed description Senter et al. have drawn attention to the following parts of the dragon:</p>
-                        <ol>
-                            <li>The fore and hind parts of the dragon resemble those of a snake, particularly the grass snake (<em>Natrix natrix</em>).</li>
-                            <li>The middle section, much enlarged, could easily have been distended and they propose that the middle section of the animal included another scaly animal – in this case the European perch (<em>Perca fluviatilis</em>), a native Italian freshwater fish which had green scales (as Aldrovandi describes) – although other possible contenders are the common carp or the goldfish.</li>
-                            <li>Finally, the two front legs, which are also described as being covered in scales, resemble the forelimbs of another common animal found in Italy, the common toad (<em>Bufo bufo</em>).</li>
-                        </ol>
-                        <p>They conclude that ‘The dragon of Bologna, described by Ulisse Aldrovandi, was a grass snake (<em>Natrix natrix</em>) to which was added the torso of a fish and the forelimbs of a common toad (<em>Bufo bufo</em>)’.<a href="#_ftn2" name="_ftnref2">[2]</a></p>
-                        <p>Did Aldrovandi know his ‘Dragon of Bologna’ was a fake? Almost certainly, for he was aware of, and drew attention to, other fakes. Senter et al. suggest that, in his description, Aldrovandi in fact hinted that the ‘Dragon of Bologna’ was not all it purported to be – his commentary likened the various parts of the dragon to the three animals from which it was composed and he included information which, as a naturalist, he knew to be highly dubious.<a href="#_ftn3" name="_ftnref3">[3]</a></p>
-                        <p>Why then did Aldrovandi include it in his museum? He wouldn’t have been the first to resort to creating a fake dragon for propaganda effect (see the example of the Barberini dragon on the <a href="https://mythicalcreatures.edwardworthlibrary.ie/dragons/winged-dragon/"><u>winged dragons</u></a> page), but it is unlikely that he was the fabricator of this particular hoax. However, although he probably hadn’t created it himself he would have been conscious that the inclusion of the creature in his museum could be a marketing bonanza. He was certainly interested in using the ‘Dragon of Bologna’ for his own ends and soon began work on his book on serpents and dragons. Noting that reports on the dragon spread widely, Paula Findlen argues that Aldrovandi was keen to maximise the discovery to his own advantage and he clearly used the object to draw attention to his museum.<a href="#_ftn4" name="_ftnref4">[4]</a> However, he had to be careful because, while the ‘Dragon of Bologna’ might represent an enormous marketing opportunity, it also had attendant risks since it was not just of zoological interest but could also involve him in a political scandal.</p>
-                        <p>The ‘Dragon of Bologna’ had appeared on 13 May 1572, the same day that a citizen of the city had become pope. Ugo Buoncompagni’s (1502-1585) elevation as Pope Gregory XIII was a swift one, coming less than twenty-four hours after the start of the conclave. The reason for this was because Ugo had, as papal legate to King Philip II of Spain (1527-1598), gained the support of the Spanish king, a support which greatly aided his elevation to the papacy. However, as the appearance of the fake dragon on 13 May 1572 at his home city demonstrates, he clearly had local enemies as it seems likely that its appearance was a deliberate act to discredit the new pope. His enemies would have been very aware of the propaganda possibilities of such marvels:  the example of  Martin Luther’s and Philip Melancthon’s polemical use of the ‘papal ass’ was within living memory and provided evidence that this type of political trick could prove a potent polemical weapon against the papacy. Dragons generally had a bad press in sixteenth-century Italy &#8211; Satan was often depicted in dragon form &#8211; so by linking Gregory XIII’s election with the appearance of a fearsome dragon, the conspirators could be fairly confident that their ruse would work to their political advantage. It was a cunning plan because it cleverly evoked the <a href="https://en.wikipedia.org/wiki/Boncompagni">coat of arms</a> of the new pope’s family, which included a winged dragon. Thus the appearance of the ‘Dragon of Bologna’ reinforced a link between Gregory XIII and a mythical beast considered a force of destruction.</p>
-                        <p>Aldrovandi, as a cousin of the new pope, was thus faced with a tricky situation. As Senter et al. suggest, he had a number of options: he could either publically declare it a hoax (which might have led to him becoming a target for the anti-Gregory XIII faction in Bologna), or he could laud it as a true dragon (which might cause political difficulties for the new pope), or he could do exactly what he did do: report on it by concentrating on the natural parts of its make-up, thus neutralizing the political sting in its tail. As Findlen concludes, ‘In this fashion, the naturalist turned a potentially disastrous occurrence into a providential act of patronage for his museum. By explaining away the serpent as an example of nature’s fecundity rather than a diabolical catastrophe, he diffused its saturnine implications, scientifically securing the foundation of the new papacy for his patrons in Rome’.<a href="#_ftn5" name="_ftnref5">[5]</a></p>
-                        <p>Despite this his papal cousin doesn’t appear to have been particularly impressed by Aldrovandi’s efforts. In a letter to Fabio Albergati (1538-1606), written on 20 October 1602, Aldrovandi recounted the ultimate failure of his project:</p>
-                        <p style="padding-left: 30px;">Given the fact that the dragon is the coat of arms of the illustrious Boncompagni family, I sent to Rome a painting of the said dragon together with a relation of its discovery, and a history in five books entitled ‘Dracologia’. I visited the illustrious Cardinal of San Sisto [Fillippo Boncompagni, the pope’s nephew] when he stopped at Bologna on his way to Venice. On that occasion, I promised to dedicate the work to him, if that would have pleased him. But I realised that he did not care for the work, and so I turned myself away from the enterprise.<a href="#_ftn6" name="_ftnref6">[6]</a></p>
-                        <p>This explains why a work which was written in 1572 to cash in on a potential market remained unpublished during the author’s life and would only be published in 1639, twenty-four years after his death. To make matters worse, by 1602 the object itself had disappeared due to curatorial neglect (or perhaps, as Ruffini suggests, because the original had simply disintegrated).<a href="#_ftn7" name="_ftnref7">[7]</a></p>
-                        <p>For Gregory XIII had options too. As Ruffini points out, Gregory XIII might not have lauded the 1572 ‘Dragon of Bologna’ but he decided to turn the Boncompagni’s coat of arms into an asset, rather than a liability. He deliberately chose to use a winged dragon as part of his new papal coat of arms and encouraged a re-evaluation of dragon iconography. Ruffini notes that Filippo Sega (1537-1596), a fellow Bolognese whose career had been sponsored to a great extent by Gregory XIII, wrote to Aldrovandi on 1 June 1572, that the ‘Dragon of Bologna’s’ appearance ‘is almost like an emblem, or an <em>impresa</em> miraculously revealed by the just God, to declare the true and perfect nature of our dragon, that today reigns and governs with prudence, swiftness of thought, and strength of resolution’.<a href="#_ftn8" name="_ftnref8">[8]</a> For Gregory XIII, keen to protect his position on the papal throne, the dragon as emblem was far less problematic than the dragon as object.</p>
-                        <p><img src="../assets/img/Fig.2.Jonstonus_v.2_pl.12.jpg" /></p>
-                        <p style="text-align: center;">The Dragon of Bologna and other dragons from Aldrovandi, included in Joannes Jonstonus, <em>Historiae naturalis: De serpentibus</em> (Amsterdam, 1657), Tab. XII.</p>
-                        <p><strong>Sources</strong></p>
-                        <p>Aldrovandi, Ulisse, <em>Serpentum, et draconum historiæ libri duo </em>(Bologna, 1640).</p>
-                        <p>Findlen, Paula, <em>Possessing Nature: Museum, Collecting, and Scientific Culture in Early Modern Italy</em> (University of California Press, 1994).</p>
-                        <p>Jonstonus, Joannes, <em>Historiae naturalis: De serpentibus</em> (Amsterdam, 1657).</p>
-                        <p>Ruffini, Marco, ‘A Dragon for the Pope: Politics and Emblematics at the court of Greogry XIII’, <em>Memoirs of the American Academy in Rome</em>, 54 (2009), 83-105.</p>
-                        <p>Senter, Phil, La Rhonda C. Hill and Brandon J. Moton, ‘Solution to a 440-year-old Zoological Mystery: The Case of Aldrovandi’s Dragon’, <em>Annals of Science</em>, 70: 4 (2013), 531-537.</p>
-                        <p><strong>Text: Dr. Elizabethanne Boran, Librarian of the Edward Worth Library, Dublin.</strong></p>
-                        <p><a href="#_ftnref1" name="_ftn1">[1]</a> Phil Senter, La Rhonda C Hill and Brandon J. Moton, ‘Solution to a 440-year-old Zoological Mystery: The Case of Aldrovandi’s Dragon’, <em>Annals of Science</em>, 70: 4 (2013), 531-537.</p>
-                        <p><a href="#_ftnref2" name="_ftn2">[2]</a> Ibid., 536.</p>
-                        <p><a href="#_ftnref3" name="_ftn3">[3]</a> Ibid.</p>
-                        <p><a href="#_ftnref4" name="_ftn4">[4]</a> Paula Findlen, <em>Possessing Nature: Museum, Collecting, and Scientific Culture in Early Modern Italy</em> (University of California Press, 1994), p. 18.</p>
-                        <p><a href="#_ftnref5" name="_ftn5">[5]</a> Ibid., p. 21.</p>
-                        <p><a href="#_ftnref6" name="_ftn6">[6]</a> Quoted in Marco Ruffini, ‘A Dragon for the Pope: Politics and Emblematics at the court of Gregory XIII’, <em>Memoirs of the American Academy in Rome</em>, 54 (2009), 94.</p>
-                        <p><a href="#_ftnref7" name="_ftn7">[7]</a> Ibid., p. 95, fn 40.</p>
-                        <p><a href="#_ftnref8" name="_ftn8">[8]</a> Ibid., p. 91.</p>
-                        
-                        <p>Source: <a href="https://mythicalcreatures.edwardworthlibrary.ie/dragons/dragon-of-bologna/">Mythical Creatures at the Edward Worth Library</a></p> 
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- Image element - set the background image for the header in the line below-->
-        <div class="py-5 bg-image-full" style="background-image: url('../assets/img/portici.jpg')">
-            <!-- Put anything you want here! The spacer below with inline CSS is just for demo purposes!-->
-            <div style="height: 20rem"></div>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- Header - set the background image for the header in the line below-->
+  <header class="py-5 bg-image-full" style="background-image: url('../assets/img/bologna.jpg')">
+    <div class="text-center my-5">
+      <h1 class="text-title text-white fs-3 fw-bolder">Discovering Bologna</h1>
+      <p class="text-white-100-no-opacity mb-0">A Journey Through History, Culture & Innovation</p>
+    </div>
+  </header>
+  <!-- Content section-->
+  <section class="py-5">
+    <div class="container my-5">
+      <div class="row justify-content-center">
+        <div class="col-lg-6">
+          <h2>The Dragon of Bologna</h2>
+          <h4>Author: Dr. Elizabethanne Boran, Librarian of the Edward Worth Library, Dublin</h4>
+          <p>One of Ulisse Aldrovandi’s most treasured exhibits was the ‘Dragon of Bologna’, a specimen which was
+            reputed to have been killed in 1572 and which Aldrovandi later exhibited in his public museum. He naturally
+            included it in his book on the history of serpents and dragons and it has attracted attention ever since
+            from scholars who have sought to identify what type of animal the ‘Dragon of Bologna’ was and what its
+            appearance signified.</p>
+          <p><img src="../assets/img/Fig.1.Aldrovandi_v.7_p.404.jpg" /></p>
+          <p>The ‘Dragon of Bologna’ in Ulisse Aldrovandi, <em>Serpentum, et draconum historiæ libri duo </em>(Bologna,
+            1640), p. 404.</p>
+          <p>Aldrovandi presents two different types of evidence: a description of the dragon and two images, one of
+            which we see here and another, in colour and similar, in his <em>Tavole di animali</em> (a work not in the
+            Worth Library but available online). His description and images provide vital clues as to the real origin of
+            the ‘Dragon of Bologna’ – and to the popularity of dragons in early modern museums. Since we know that
+            Aldrovandi insisted on pictorial accuracy we can be fairly sure that his representation of the ‘Dragon of
+            Bologna’ was a faithful representation.</p>
+          <p>However, as Phil Senter, LaRhonda C. Hill and Brandon J. Moton have convincingly argued, though the image
+            might be faithful, the object itself was a fake.<a href="#_ftn1" name="_ftnref1">[1]</a> By analysing the
+            images and Aldrovandi’s detailed description Senter et al. have drawn attention to the following parts of
+            the dragon:</p>
+          <ol>
+            <li>The fore and hind parts of the dragon resemble those of a snake, particularly the grass snake
+              (<em>Natrix natrix</em>).</li>
+            <li>The middle section, much enlarged, could easily have been distended and they propose that the middle
+              section of the animal included another scaly animal – in this case the European perch (<em>Perca
+                fluviatilis</em>), a native Italian freshwater fish which had green scales (as Aldrovandi describes) –
+              although other possible contenders are the common carp or the goldfish.</li>
+            <li>Finally, the two front legs, which are also described as being covered in scales, resemble the forelimbs
+              of another common animal found in Italy, the common toad (<em>Bufo bufo</em>).</li>
+          </ol>
+          <p>They conclude that ‘The dragon of Bologna, described by Ulisse Aldrovandi, was a grass snake (<em>Natrix
+              natrix</em>) to which was added the torso of a fish and the forelimbs of a common toad (<em>Bufo
+              bufo</em>)’.<a href="#_ftn2" name="_ftnref2">[2]</a></p>
+          <p>Did Aldrovandi know his ‘Dragon of Bologna’ was a fake? Almost certainly, for he was aware of, and drew
+            attention to, other fakes. Senter et al. suggest that, in his description, Aldrovandi in fact hinted that
+            the ‘Dragon of Bologna’ was not all it purported to be – his commentary likened the various parts of the
+            dragon to the three animals from which it was composed and he included information which, as a naturalist,
+            he knew to be highly dubious.<a href="#_ftn3" name="_ftnref3">[3]</a></p>
+          <p>Why then did Aldrovandi include it in his museum? He wouldn’t have been the first to resort to creating a
+            fake dragon for propaganda effect (see the example of the Barberini dragon on the <a
+              href="https://mythicalcreatures.edwardworthlibrary.ie/dragons/winged-dragon/"><u>winged dragons</u></a>
+            page), but it is unlikely that he was the fabricator of this particular hoax. However, although he probably
+            hadn’t created it himself he would have been conscious that the inclusion of the creature in his museum
+            could be a marketing bonanza. He was certainly interested in using the ‘Dragon of Bologna’ for his own ends
+            and soon began work on his book on serpents and dragons. Noting that reports on the dragon spread widely,
+            Paula Findlen argues that Aldrovandi was keen to maximise the discovery to his own advantage and he clearly
+            used the object to draw attention to his museum.<a href="#_ftn4" name="_ftnref4">[4]</a> However, he had to
+            be careful because, while the ‘Dragon of Bologna’ might represent an enormous marketing opportunity, it also
+            had attendant risks since it was not just of zoological interest but could also involve him in a political
+            scandal.</p>
+          <p>The ‘Dragon of Bologna’ had appeared on 13 May 1572, the same day that a citizen of the city had become
+            pope. Ugo Buoncompagni’s (1502-1585) elevation as Pope Gregory XIII was a swift one, coming less than
+            twenty-four hours after the start of the conclave. The reason for this was because Ugo had, as papal legate
+            to King Philip II of Spain (1527-1598), gained the support of the Spanish king, a support which greatly
+            aided his elevation to the papacy. However, as the appearance of the fake dragon on 13 May 1572 at his home
+            city demonstrates, he clearly had local enemies as it seems likely that its appearance was a deliberate act
+            to discredit the new pope. His enemies would have been very aware of the propaganda possibilities of such
+            marvels: the example of Martin Luther’s and Philip Melancthon’s polemical use of the ‘papal ass’ was within
+            living memory and provided evidence that this type of political trick could prove a potent polemical weapon
+            against the papacy. Dragons generally had a bad press in sixteenth-century Italy &#8211; Satan was often
+            depicted in dragon form &#8211; so by linking Gregory XIII’s election with the appearance of a fearsome
+            dragon, the conspirators could be fairly confident that their ruse would work to their political advantage.
+            It was a cunning plan because it cleverly evoked the <a
+              href="https://en.wikipedia.org/wiki/Boncompagni">coat of arms</a> of the new pope’s family, which included
+            a winged dragon. Thus the appearance of the ‘Dragon of Bologna’ reinforced a link between Gregory XIII and a
+            mythical beast considered a force of destruction.</p>
+          <p>Aldrovandi, as a cousin of the new pope, was thus faced with a tricky situation. As Senter et al. suggest,
+            he had a number of options: he could either publically declare it a hoax (which might have led to him
+            becoming a target for the anti-Gregory XIII faction in Bologna), or he could laud it as a true dragon (which
+            might cause political difficulties for the new pope), or he could do exactly what he did do: report on it by
+            concentrating on the natural parts of its make-up, thus neutralizing the political sting in its tail. As
+            Findlen concludes, ‘In this fashion, the naturalist turned a potentially disastrous occurrence into a
+            providential act of patronage for his museum. By explaining away the serpent as an example of nature’s
+            fecundity rather than a diabolical catastrophe, he diffused its saturnine implications, scientifically
+            securing the foundation of the new papacy for his patrons in Rome’.<a href="#_ftn5" name="_ftnref5">[5]</a>
+          </p>
+          <p>Despite this his papal cousin doesn’t appear to have been particularly impressed by Aldrovandi’s efforts.
+            In a letter to Fabio Albergati (1538-1606), written on 20 October 1602, Aldrovandi recounted the ultimate
+            failure of his project:</p>
+          <p style="padding-left: 30px;">Given the fact that the dragon is the coat of arms of the illustrious
+            Boncompagni family, I sent to Rome a painting of the said dragon together with a relation of its discovery,
+            and a history in five books entitled ‘Dracologia’. I visited the illustrious Cardinal of San Sisto [Fillippo
+            Boncompagni, the pope’s nephew] when he stopped at Bologna on his way to Venice. On that occasion, I
+            promised to dedicate the work to him, if that would have pleased him. But I realised that he did not care
+            for the work, and so I turned myself away from the enterprise.<a href="#_ftn6" name="_ftnref6">[6]</a></p>
+          <p>This explains why a work which was written in 1572 to cash in on a potential market remained unpublished
+            during the author’s life and would only be published in 1639, twenty-four years after his death. To make
+            matters worse, by 1602 the object itself had disappeared due to curatorial neglect (or perhaps, as Ruffini
+            suggests, because the original had simply disintegrated).<a href="#_ftn7" name="_ftnref7">[7]</a></p>
+          <p>For Gregory XIII had options too. As Ruffini points out, Gregory XIII might not have lauded the 1572
+            ‘Dragon of Bologna’ but he decided to turn the Boncompagni’s coat of arms into an asset, rather than a
+            liability. He deliberately chose to use a winged dragon as part of his new papal coat of arms and encouraged
+            a re-evaluation of dragon iconography. Ruffini notes that Filippo Sega (1537-1596), a fellow Bolognese whose
+            career had been sponsored to a great extent by Gregory XIII, wrote to Aldrovandi on 1 June 1572, that the
+            ‘Dragon of Bologna’s’ appearance ‘is almost like an emblem, or an <em>impresa</em> miraculously revealed by
+            the just God, to declare the true and perfect nature of our dragon, that today reigns and governs with
+            prudence, swiftness of thought, and strength of resolution’.<a href="#_ftn8" name="_ftnref8">[8]</a> For
+            Gregory XIII, keen to protect his position on the papal throne, the dragon as emblem was far less
+            problematic than the dragon as object.</p>
+          <p><img src="../assets/img/Fig.2.Jonstonus_v.2_pl.12.jpg" /></p>
+          <p style="text-align: center;">The Dragon of Bologna and other dragons from Aldrovandi, included in Joannes
+            Jonstonus, <em>Historiae naturalis: De serpentibus</em> (Amsterdam, 1657), Tab. XII.</p>
+          <p><strong>Sources</strong></p>
+          <p>Aldrovandi, Ulisse, <em>Serpentum, et draconum historiæ libri duo </em>(Bologna, 1640).</p>
+          <p>Findlen, Paula, <em>Possessing Nature: Museum, Collecting, and Scientific Culture in Early Modern
+              Italy</em> (University of California Press, 1994).</p>
+          <p>Jonstonus, Joannes, <em>Historiae naturalis: De serpentibus</em> (Amsterdam, 1657).</p>
+          <p>Ruffini, Marco, ‘A Dragon for the Pope: Politics and Emblematics at the court of Greogry XIII’, <em>Memoirs
+              of the American Academy in Rome</em>, 54 (2009), 83-105.</p>
+          <p>Senter, Phil, La Rhonda C. Hill and Brandon J. Moton, ‘Solution to a 440-year-old Zoological Mystery: The
+            Case of Aldrovandi’s Dragon’, <em>Annals of Science</em>, 70: 4 (2013), 531-537.</p>
+          <p><strong>Text: Dr. Elizabethanne Boran, Librarian of the Edward Worth Library, Dublin.</strong></p>
+          <p><a href="#_ftnref1" name="_ftn1">[1]</a> Phil Senter, La Rhonda C Hill and Brandon J. Moton, ‘Solution to a
+            440-year-old Zoological Mystery: The Case of Aldrovandi’s Dragon’, <em>Annals of Science</em>, 70: 4 (2013),
+            531-537.</p>
+          <p><a href="#_ftnref2" name="_ftn2">[2]</a> Ibid., 536.</p>
+          <p><a href="#_ftnref3" name="_ftn3">[3]</a> Ibid.</p>
+          <p><a href="#_ftnref4" name="_ftn4">[4]</a> Paula Findlen, <em>Possessing Nature: Museum, Collecting, and
+              Scientific Culture in Early Modern Italy</em> (University of California Press, 1994), p. 18.</p>
+          <p><a href="#_ftnref5" name="_ftn5">[5]</a> Ibid., p. 21.</p>
+          <p><a href="#_ftnref6" name="_ftn6">[6]</a> Quoted in Marco Ruffini, ‘A Dragon for the Pope: Politics and
+            Emblematics at the court of Gregory XIII’, <em>Memoirs of the American Academy in Rome</em>, 54 (2009), 94.
+          </p>
+          <p><a href="#_ftnref7" name="_ftn7">[7]</a> Ibid., p. 95, fn 40.</p>
+          <p><a href="#_ftnref8" name="_ftn8">[8]</a> Ibid., p. 91.</p>
+
+          <p>Source: <a href="https://mythicalcreatures.edwardworthlibrary.ie/dragons/dragon-of-bologna/">Mythical
+              Creatures at the Edward Worth Library</a></p>
         </div>
-        <!-- Content section-->
-        <section class="py-5">
-            <div class="container my-5">
-                <div class="row justify-content-center">
-                    <div class="col-lg-6">
-                        <h2>Do you like what you see?</h2>
-                        <p class="lead">Our user-friendly interface allows you to seamlessly navigate between articles and visualize their locations on an interactive map, while our commitment to editorial excellence ensures that every piece is engaging, informative, and accurate. The Discovering Bologna team has meticulously crafted every typographic detail, from font families and sizes to colors, margins, aspect ratios, and captivating images with captivating captions, to truly reflect the graphic theme and ambiance of this captivating city.</p>
-                        <p class="mb-0">Join us on this digital adventure and explore the wonders of Bologna like never before, all from the comfort of your own home. Discovering Bologna: Unraveling the secrets of the city, one story at a time.</p>
+      </div>
+    </div>
+  </section>
+  <!-- Image element - set the background image for the header in the line below-->
+  <div class="py-5 bg-image-full" style="background-image: url('../assets/img/portici.jpg')">
+    <!-- Put anything you want here! The spacer below with inline CSS is just for demo purposes!-->
+    <div style="height: 20rem"></div>
+  </div>
+  <!-- Content section-->
+  <section class="py-5">
+    <div class="container my-5">
+      <div class="row justify-content-center">
+        <div class="col-lg-6">
+          <h2>Do you like what you see?</h2>
+          <p class="lead">Our user-friendly interface allows you to seamlessly navigate between articles and visualize
+            their locations on an interactive map, while our commitment to editorial excellence ensures that every piece
+            is engaging, informative, and accurate. The Discovering Bologna team has meticulously crafted every
+            typographic detail, from font families and sizes to colors, margins, aspect ratios, and captivating images
+            with captivating captions, to truly reflect the graphic theme and ambiance of this captivating city.</p>
+          <p class="mb-0">Join us on this digital adventure and explore the wonders of Bologna like never before, all
+            from the comfort of your own home. Discovering Bologna: Unraveling the secrets of the city, one story at a
+            time.</p>
 
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- Footer-->
-        <footer class="py-5 bg-dark">
-            <div class="container"><p class="m-0 text-center text-white">Created by &copy; DHDK Group 2023</p></div>
-        </footer>
-        <!-- Bootstrap core JS-->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-        <!-- Core theme JS-->
-        <script src="/js/scripts.js"></script>
-    </body>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Footer-->
+  <footer class="py-5 bg-dark">
+    <div class="container">
+      <p class="m-0 text-center text-white">Created by &copy; DHDK Group 2023</p>
+    </div>
+  </footer>
+  <!-- Bootstrap core JS-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Core theme JS-->
+  <script src="/js/scripts.js"></script>
+</body>
+
 </html>
