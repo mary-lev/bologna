@@ -10,7 +10,12 @@
   <!-- Favicon-->
   <link rel="icon" type="image/x-icon" href="../assets/favicon.ico" />
   <!-- Core theme CSS (includes Bootstrap)-->
-  <link href="../css/styles.css" rel="stylesheet" />
+  <link id="pagestyle" rel="stylesheet" type="text/css" href="../css/styles.css">
+  <script>
+    function switchStyle(sheet) {
+      document.getElementById('pagestyle').setAttribute('href', sheet);
+    }
+  </script>
 </head>
 
 <body>
@@ -41,9 +46,9 @@
               University
             </a>
             <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
-              <a class="dropdown-item" href="index.html#aldrovandi">Ulisse Aldrovandi</a>
-              <a class="dropdown-item" href="index.html#pasolini">Pier Paolo Pasolini</a>
-              <a class="dropdown-item" href="index.html#eco">Umberto Eco</a>
+              <a class="dropdown-item" href="../university/index.html#aldrovandi">Ulisse Aldrovandi</a>
+              <a class="dropdown-item" href="../university/index.html#pasolini">Pier Paolo Pasolini</a>
+              <a class="dropdown-item" href="../university/index.html#eco">Umberto Eco</a>
             </ul>
           </li>
 
@@ -58,9 +63,22 @@
             </ul>
           </li>
 
-          <li class="nav-item">
-            <a class="nav-link" href="../map.html" role="button">Map</a>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              Style </a>
+            <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+              <a class="dropdown-item" onclick="switchStyle('../css/university.css')">Bootstrap default
           </li>
+          <a class="dropdown-item" onclick="switchStyle('../css/aldrovandi.css')">Rennaisance</li>
+            <a class="dropdown-item" onclick="switchStyle('../css/olga.css')">Olga's style</li>
+              <a class="dropdown-item" onclick="switchStyle('../css/alka.css')">Alka's style</li>
+        </ul>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="../map.html" role="button">Map</a>
+        </li>
 
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button"

@@ -28,8 +28,8 @@
   <link id="pagestyle" rel="stylesheet" type="text/css" href="../css/aldrovandi.css">
   <script>
     function switchStyle(sheet) {
-    document.getElementById('pagestyle').setAttribute('href', sheet);
-}
+      document.getElementById('pagestyle').setAttribute('href', sheet);
+    }
   </script>
 
   <!-- Google fonts -->
@@ -54,7 +54,9 @@
             <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button"
               data-bs-toggle="dropdown" aria-expanded="false">Sights</a>
             <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
-              <a class="dropdown-item" href="../sights/petronio.html">The Church of San Petronio in Bologna</a>              <a class="dropdown-item" href="../sights/secrets.html">Seven Secrets of Bologna</a>              <a class="dropdown-item" href="../sights/torri.html">Garisenda and Asinell</a>
+              <a class="dropdown-item" href="../sights/petronio.html">The Church of San Petronio in Bologna</a> <a
+                class="dropdown-item" href="../sights/secrets.html">Seven Secrets of Bologna</a> <a
+                class="dropdown-item" href="../sights/torri.html">Garisenda and Asinell</a>
             </ul>
           </li>
 
@@ -76,31 +78,41 @@
               Women
             </a>
             <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
-              <a class="dropdown-item" href="#pk">Article 1</a>
-              <a class="dropdown-item" href="#pk">Article 2</a>
-              <a class="dropdown-item" href="#pk">Article 3</a>
+              <a class="dropdown-item" href="../Women/Artemisia_Gentileschi.html">Artemisia Gentileschi</a>
+              <a class="dropdown-item" href="../Women/Laura_Bassi.html">Laura Bassi</a>
+              <a class="dropdown-item" href="../Women/Morandi_Manzolini.html">Anna Morandi Manzolini</a>
             </ul>
-          </li>
-
-          <li class="nav-item">
-            <a class="nav-link" href="../map.html" role="button">Map</a>
           </li>
 
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button"
               data-bs-toggle="dropdown" aria-expanded="false">
-              About
-            </a>
+              Style </a>
             <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
-              <a class="dropdown-item" href="#pk">Documentation</a>
-              <a class="dropdown-item" href="#pk">About us</a>
-              <a class="nav-link" title="Star on GitHub" href="https://github.com/mary-lev/bologna"
-                target="_blank">GitHub</a>
-            </ul>
+              <a class="dropdown-item" onclick="switchStyle('../css/university.css')">Bootstrap default
           </li>
-<li><button onclick="switchStyle('../css/university.css')">University</button>
-  <button onclick="switchStyle('../css/aldrovandi.css')">Aldrovandi</button>
-  </li>
+          <a class="dropdown-item" onclick="switchStyle('../css/aldrovandi.css')">Rennaisance</li>
+            <a class="dropdown-item" onclick="switchStyle('../css/olga.css')">Olga's style</li>
+              <a class="dropdown-item" onclick="switchStyle('../css/alka.css')">Alka's style</li>
+        </ul>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="../map.html" role="button">Map</a>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button"
+            data-bs-toggle="dropdown" aria-expanded="false">
+            About
+          </a>
+          <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+            <a class="dropdown-item" href="#pk">Documentation</a>
+            <a class="dropdown-item" href="#pk">About us</a>
+            <a class="nav-link" title="Star on GitHub" href="https://github.com/mary-lev/bologna"
+              target="_blank">GitHub</a>
+          </ul>
+        </li>
 
         </ul>
       </div>
@@ -121,8 +133,8 @@
         <div class="row justify-content-center">
           <h2>Aldrovandi's Odyssey: Tracing the Life and Discoveries of the Father of Modern Natural History</h2>
           <p class="author">By <a href="https://courtauld.academia.edu/CostanzaBeltrami" target="_blank">Costanza
-            Beltrami</a></p>
-            <img src="../assets/img/aldrovandi/portrait.jpg" />
+              Beltrami</a></p>
+          <img src="../assets/img/aldrovandi/portrait.jpg" />
           <div class="col-lg-6">
             <iframe width="560" height="315" src="https://www.youtube.com/embed/J6SK2vI3wwg"
               title="YouTube video player" frameborder="0"
@@ -160,7 +172,8 @@
               <a href="http://amshistorica.unibo.it/26" target="_blank">birds</a>, <a
                 href="http://amshistorica.unibo.it/17" target="_blank">fish</a>, <a
                 href="http://amshistorica.unibo.it/133" target="_blank">metals</a>, and even on <a
-                href="http://amshistorica.unibo.it/127" target="_blank">real and imaginary monsters</a>. </p>
+                href="http://amshistorica.unibo.it/127" target="_blank">real and imaginary monsters</a>.
+            </p>
             <p>Despite the variety of subjects, Aldrovandi’s scientific books were all widely illustrated with woodcuts
               and engravings produced in Androvandi’s own artistic workshop. The workshop employed several full-time
               artists such as <a
@@ -236,14 +249,14 @@
               piece is engaging, informative, and accurate. The Discovering Bologna team has meticulously crafted every
               typographic detail, from font families and sizes to colors, margins, aspect ratios, and captivating images
               with captivating captions, to truly reflect the graphic theme and ambiance of this captivating city.
-            Join us on this digital adventure and explore the wonders of Bologna like never before, all
+              Join us on this digital adventure and explore the wonders of Bologna like never before, all
               from the comfort of your own home. Discovering Bologna: Unraveling the secrets of the city, one story at a
               time. Our user-friendly interface allows you to seamlessly navigate between articles and visualize
               their locations on an interactive map, while our commitment to editorial excellence ensures that every
               piece is engaging, informative, and accurate. The Discovering Bologna team has meticulously crafted every
               typographic detail, from font families and sizes to colors, margins, aspect ratios, and captivating images
               with captivating captions, to truly reflect the graphic theme and ambiance of this captivating city.
-            Join us on this digital adventure and explore the wonders of Bologna like never before, all
+              Join us on this digital adventure and explore the wonders of Bologna like never before, all
               from the comfort of your own home. Discovering Bologna: Unraveling the secrets of the city, one story at a
               time.</p>
 
