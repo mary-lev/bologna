@@ -89,9 +89,9 @@
               data-bs-toggle="dropdown" aria-expanded="false">
               Style </a>
             <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
-              <a class="dropdown-item" onclick="switchStyle('../css/university.css')">Bootstrap default
+              <a class="dropdown-item" onclick="switchStyle('../css/styles.css')">Bootstrap default
           </li>
-          <a class="dropdown-item" onclick="switchStyle('../css/aldrovandi.css')">Rennaisance</li>
+          <a class="dropdown-item" onclick="switchStyle('../css/aldrovandi.css')">Renaissance</li>
             <a class="dropdown-item" onclick="switchStyle('../css/olga.css')">Olga's style</li>
               <a class="dropdown-item" onclick="switchStyle('../css/alka.css')">Alka's style</li>
         </ul>
@@ -119,9 +119,9 @@
     </div>
   </nav>
   <!-- Header - set the background image for the header in the line below-->
-  <!-- <header class="py-5 bg-image-full" style="background-image: url('../assets/img/bologna.jpg')"> -->
+  
   <div class="context">
-    <header class="py-5">
+    <header class="py-5 bg-image-full background-image">
       <div class="text-center my-5">
         <h1 class="text-title text-white fs-3 fw-bolder">Discovering Bologna</h1>
         <p class="text-white-100-no-opacity mb-0">A Journey Through History, Culture & Innovation</p>
@@ -134,8 +134,9 @@
           <h2>Aldrovandi's Odyssey: Tracing the Life and Discoveries of the Father of Modern Natural History</h2>
           <p class="author">By <a href="https://courtauld.academia.edu/CostanzaBeltrami" target="_blank">Costanza
               Beltrami</a></p>
-          <img src="../assets/img/aldrovandi/portrait.jpg" />
+              <img class="img-fluid" src="../assets/img/aldrovandi/portrait.jpg" style="max-width: 30%; max-height: 30%; object-fit: contain;  position: relative; top: 0;" />
           <div class="col-lg-6">
+           
             <iframe width="560" height="315" src="https://www.youtube.com/embed/J6SK2vI3wwg"
               title="YouTube video player" frameborder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -232,7 +233,7 @@
           </div>
         </div>
       </div>
-      <img class="vignette" src="../assets/img/aldrovandi/vignette.png" />
+      <!-- <img class="vignette" src="../assets/img/aldrovandi/vignette.png" /> -->
     </section>
 
     <!-- Content section-->

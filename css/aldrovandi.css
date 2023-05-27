@@ -256,3 +256,7 @@ iframe {
 .bg-dark {
     display: block;
 }
+
+.Renaissance-no-display {
+    display: none;
+}
