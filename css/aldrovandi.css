@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=MedievalSharp&family=Metamorphous&family=Rosarivo&display=swap");
+
 * {
     /* background-color: antiquewhite; */
     background-image: url("../assets/img/aldrovandi/paper-gf68c0619c_1920.jpg");
@@ -27,8 +29,6 @@ body {
     /* color:saddlebrown; */
     /* width: 50%; */
 }
-
-.row {}
 
 .col-lg-6 {
     column-count: 2;
@@ -88,7 +88,7 @@ img {
     border: thick double saddlebrown;
 }
 
-::marker {
+::marker, .footnote {
     color: saddlebrown;
     font-weight: bold;
 }
@@ -142,6 +142,17 @@ h2 {
     font-family: 'Metamorphous', serif;
 }
 
+h3 {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: saddlebrown;
+    font-weight: bold;
+    font-variant: small-caps;
+    font-size: 24px;
+    font-family: 'Metamorphous', serif;
+}
+
 p {
     font-size: 18px;
     line-height: 110%;
@@ -191,6 +202,7 @@ a:visited {
 .author::first-letter,
 .triangle::first-letter,
 .lead::first-letter,
+.image-note::first-letter,
 .text-white-100-no-opacity::first-letter {
     font-size: 1em;
     float: none;
@@ -259,4 +271,18 @@ iframe {
 
 .Renaissance-no-display {
     display: none;
+}
+
+.image-note {
+    font-size: smaller;
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+.tooltip .arrow:before {
+    border-top-color: #008ec3 !important;
+}
+
+.tooltip .tooltip-inner {
+    background-color: #008ec3;
 }
