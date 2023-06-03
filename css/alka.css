@@ -15,6 +15,7 @@ p{
 body{
     background-color: #C4B0FF;
     border-style: dashed solid;
+    border: 6px solid #11009E;;
 }
 .womanpaint{
     display: block;
