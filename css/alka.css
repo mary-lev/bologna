@@ -4,7 +4,7 @@
 
 h2{
     font-family: 'Bentham', serif;
-    background-color: #9336B4;
+    background-color:#EEE2DE;
 }
 p{
     font-family: 'Libre Baskerville', serif;
@@ -13,9 +13,11 @@ p{
     text-align: justify;
 }
 body{
-    background-color: #C4B0FF;
+    background-color: white;
     border-style: dashed solid;
-    border: 6px solid #11009E;;
+    border: 6px solid red;
+    
+
 }
 .womanpaint{
     display: block;
@@ -31,6 +33,13 @@ body{
     width: 30%;
     border: thick double black;
 }
+.container{
+    display: flex;
+}
+.navbar-nav{
+    display: flex;
+}
+
 .figuresize{
     display: block;
     margin-left: auto;
@@ -61,10 +70,10 @@ p::first-letter {
     float: left;
     margin: 0 10px 0 0;
     line-height: normal;
-    color:#DD58D6;
+    color:red;
 }
 h1{
-    color: #DD58D6;
+    color: #EA906C;
     margin-left: 10%;
 }
 .text-white-100-no-opacity::first-letter {
