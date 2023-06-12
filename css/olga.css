@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Italianno&family=Lovers+Quarrel&family=Monsieur+La+Doulaise&family=UnifrakturCook:wght@700&display=swap');
+
+body {
+    background-color: white;
+    font-family: "Italianno", serif;   
+    
+}
+
+.fs-3 {
+    font-family: "Monsieur La Doulaise", serif;
+    font-size: 70px;
+    text-align: center;
+
+}
+
+.context {
+    background-image: url(../assets/Olgafont/queen2.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 100px;
+    background-attachment: fixed;
+    
+
+}
+
+.mb-0 {
+    text-align: center;
+    font-family: "UnifrakturCook", serif;
+    font-size: 30px;
+}
+
+
+
+.col-lg-6 {border: 1px solid black;
+    background-color: lightblue;
+    background-image: url(../assets/Olgafont/letter1.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding: 100px;
+    font-size: 30px;
+    border: #afa85b solid 5px;
+
+}
+
+ h2 {
+    font-family: "Italianno", serif;
+    border-style: none;
+    font-size: 50px;
+    text-align: center;
+
+}
+
+h3 {
+    text-align: center;
+    font-size: 40px;
+    text-decoration: underline;
+
+}
+
+h5 {
+    text-align: right;
+    font-size: 20px;
+
+}
+
+h6 {
+    text-align: right;
+    font-size: 20px;
+
+}
+
+
+img {
+    -webkit-filter: sepia(100%); /* Safari 6.0 - 9.0 */
+    filter: sepia(100%);
+    border: 10px solid #ddd;
+    border-color: whitesmoke;
+    border-radius: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+   }
+
+   
+.navbar-brand {
+    font-size: large;
+}
+.container {
+    max-width: 750px;
+    margin: auto;
+}
+
+.button {
+    background-color: #afa85b;
+    padding: 15px 20px;
+    color: black;
+    font-family: Italianno;
+    border: none;
+    cursor: pointer;
+}
+
+.button:hover {
+    opacity: 0.9;
+}
