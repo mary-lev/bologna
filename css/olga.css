@@ -60,7 +60,6 @@ li.nav-item {
 .dropdown-menu a:hover {background-color: #faebd7;}
 
 
-
 .nav-item:hover .dropdown-menu {
   display: block;
 }
