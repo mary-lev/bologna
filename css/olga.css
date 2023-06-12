@@ -1,11 +1,138 @@
 @import url('https://fonts.googleapis.com/css2?family=Italianno&family=Lovers+Quarrel&family=Monsieur+La+Doulaise&family=UnifrakturCook:wght@700&display=swap');
 
-body {
-    background-color: white;
-    font-family: "Italianno", serif;   
-    
+.navbar-brand {
+  font-family: "Monsieur La Doulaise";
+  font-size: 30px;
 }
 
+.navbar-nav {
+  display: flex;
+  background-color: #ffd8a4;
+  /* background-image: url(../assets/Olgafont/queen3.jpeg); */
+}
+
+
+li a, .nav-link {
+  /* это кнопка */ 
+  display: inline-block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 30px;
+  width: 100%;
+  justify-content: space-between;
+  border: none;
+  display: inline;
+  align-items: center;
+  cursor: pointer;
+  position: relative;
+}
+
+li a:hover, .nav-item:hover:hover .nav-link {
+  background-color: #faebd7;
+}
+
+li.nav-item {
+  /* контейнер для ссылок */
+  display: inline-block;
+}
+
+.dropdown-menu {
+  /* выпадающий список */
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-menu a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  font-size: 30px;
+}
+
+.dropdown-menu a:hover {background-color: #faebd7;}
+
+
+
+.nav-item:hover .dropdown-menu {
+  display: block;
+}
+
+
+
+/* .navbar-nav {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+} */
+
+/* .nav-item {
+  position: relative;
+  display: inline-block;
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+} */
+
+/* .nav-item {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown-menu {
+  position: relative;
+  display: inline-block;
+} */
+
+/* 
+.dropdown-item {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+} */
+
+/* .dropdown-item a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+.nav-item:hover .dropdown-item {
+  display: block;
+} */
+
+
+body {
+    background-color: #faebd7;
+    font-family: "Italianno", serif;   
+  }
+    
+
+
+/* .container {
+  max-width: 750px;
+  margin: auto;
+} */
 .fs-3 {
     font-family: "Monsieur La Doulaise", serif;
     font-size: 70px;
@@ -37,9 +164,12 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    padding: 100px;
     font-size: 30px;
     border: #afa85b solid 5px;
+    max-width: 750px;
+    margin: auto;
+    padding: 100px;
+  }
 
 }
 
@@ -84,14 +214,6 @@ img {
    }
 
    
-.navbar-brand {
-    font-size: large;
-}
-.container {
-    max-width: 750px;
-    margin: auto;
-}
-
 .button {
     background-color: #afa85b;
     padding: 15px 20px;
