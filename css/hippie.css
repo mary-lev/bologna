@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Arvo&family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=MedievalSharp&family=Metamorphous&family=Rosarivo&family=Special+Elite&family=Spicy+Rice&display=swap');
+
+body {
+    background-color: #f5deb3; /* Wheat background color */
+    font-family: 'Courier New', Courier, monospace; /* Vintage typewriter font */
+    background-image: url("../assets/hippie/background2.png");
+    background-blend-mode: normal;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: 0px;
+}
+
+.navbar {
+    /* background-color: #228b22; Forest green background color */
+    background-image: url("../assets/hippie/background2.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: sticky;
+    top: 0;
+    z-index: 1020;
+}
+
+.navbar-brand {
+    color: #228b22; /* Beige text color */
+    font-size: 8em;
+    text-decoration: none;
+    font-family: 'Spicy Rice', cursive;
+    text-align: justify;
+    display: flex; /* This sets the display to flex */
+    justify-content: center; /* This separates the brand from the rest */
+    align-items: center; 
+}
+
+.navbar-nav {
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+    opacity: 1;
+  }
+
+.navbar-nav .nav-link {
+    color: #f5f5dc; /* Beige text color */
+    border-radius: 5px;
+    padding: 10px 15px;
+    background-color: #8b4513; /* Saddle Brown background color */
+    transition: background-color 0.5s ease; /* transition for hover effect */
+    opacity: 1;
+}
+
+.navbar-nav .dropdown-menu {
+    position: static;
+    opacity: 1;
+  }
+
+.navbar-toggler {
+    display: none;
+  }
+
+/* Add button-like styling to the dropdown toggle */
+.nav-link.dropdown-toggle {
+    background-color: #8b4513; /* Saddle Brown background color */
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease; /* transition for hover effect */
+    font-family: 'Special Elite', serif;
+    font-size: 32px;
+    text-decoration: none;
+}
+
+.nav-item, .nav-item a {
+    font-family: 'Special Elite', serif;
+    font-size: 32px;
+    text-decoration: none;
+}
+
+.nav-link.dropdown-toggle:hover {
+    background-color: #daa520; /* Goldenrod background color */
+}
+
+
+.dropdown-menu {
+    background-color: #8b4513; /* Saddle Brown background color */
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-item {
+    color: #f5f5dc; /* Beige text color */
+}
+
+.dropdown-item:hover {
+    background-color: #daa520; /* Goldenrod background color */
+}
+
+.dropdown-menu a {
+    padding: 12px 12px;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    font-size: 24px; /* Increased font-size */
+}
+
+.nav-item:hover .dropdown-menu {
+    display: block;
+}
+
+ul {
+    list-style-type: none;
+    padding-inline-start: 0px;
+}
+
+
+.header {
+    text-align: center;
+    padding: 50px;
+    opacity: 1;
+}
+
+.header h1 {
+    font-size: 60px;
+    color: #8b4513; /* Saddle Brown */
+    opacity: 1;
+}
+
+p {
+    display: block;
+    margin-left: 50px;
+    margin-right: 50px;
+    font-size: 32px;
+    font-family: 'Arvo', serif;
+    color: #8b4513;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+h2 {
+    font-family: 'Special Elite', serif;
+    color: #228b22; 
+    text-align: center;
+    font-size: 48px;
+    line-height: 125%;
+    display: block;
+    font-weight: bold;
+    margin-top: 24px;
+    margin-block-start: 2em;
+    margin-block-end: 2em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    opacity: 1;
+}
+
+/* Vintage style buttons */
+.button {
+    background-color: #8b4513; /* Saddle Brown */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 12px;
+}
+
+.button:hover {
+    background-color: #daa520; /* Goldenrod */
+}
+
+/* Image gallery with a border */
+.img-gallery img {
+    margin: 5px;
+    border: 5px solid #8b4513; /* Saddle Brown */
+    border-radius: 8px;
+    width: 300px;
+}
+
+/* Footer style */
+.footer {
+    background-color: #228b22; /* Forest green */
+    color: #f5f5dc; /* Beige */
+    text-align: center;
+    padding: 40px;
+}
+
+.text-title, .mb-0 {
+    display: none;
+}
+
+.justify-content-center {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+}
+
+img, .img-fluid {
+    margin: 5px;
+    border: 5px solid #8b4513; /* Saddle Brown */
+    border-radius: 8px;
+    width: 300px;
+}
+
+.sticky-top {
+    position: sticky;
+    top: 0;
+    z-index: 1020;
+  }
+
+.person, .place {
+    font-variant: small-caps;
+    color:sienna;
+    font-weight: bold;
+}
+
+.person-name {
+    font-size: 9px;
+}
