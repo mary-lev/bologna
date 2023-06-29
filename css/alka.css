@@ -62,6 +62,9 @@
     cursor: pointer;
     position: relative;
 }
+a{
+    color: red;
+}
 li a:hover, .nav-item:hover:hover .nav-link {
     color: black;
     font-size: small;
