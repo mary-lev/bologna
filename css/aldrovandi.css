@@ -2,7 +2,7 @@
 
 * {
     /* background-color: antiquewhite; */
-    background-image: url("../assets/img/aldrovandi/paper-gf68c0619c_1920.jpg");
+    /* background-image: url("../assets/img/aldrovandi/paper-gf68c0619c_1920.jpg"); */
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -15,6 +15,7 @@ body {
     /* margin: 10px;
     border: 10px; */
     /* background-color: #F3E9D2; */
+    background-image: url("../assets/img/aldrovandi/paper-gf68c0619c_1920.jpg");
     color: #5E503F;
     overflow-x: hidden;
 
