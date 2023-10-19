@@ -308,30 +308,6 @@ iframe {
     margin-bottom: 16px;
 }
 
-.tooltip .tooltip-inner {
-    background-color: saddlebrown; /* Your preferred color */
-}
-
-.tooltip.bs-tooltip-auto[x-placement^=top] .arrow::before,
-.tooltip.bs-tooltip-top .arrow::before {
-    border-top-color: saddlebrown; /* Your preferred color */
-}
-
-.tooltip.bs-tooltip-auto[x-placement^=right] .arrow::before,
-.tooltip.bs-tooltip-right .arrow::before {
-    border-right-color: saddlebrown; /* Your preferred color */
-}
-
-.tooltip.bs-tooltip-auto[x-placement^=bottom] .arrow::before,
-.tooltip.bs-tooltip-bottom .arrow::before {
-    border-bottom-color: saddlebrown; /* Your preferred color */
-}
-
-.tooltip.bs-tooltip-auto[x-placement^=left] .arrow::before,
-.tooltip.bs-tooltip-left .arrow::before {
-    border-left-color: saddlebrown; /* Your preferred color */
-}
-
 @keyframes glowing {
     0% { text-shadow: 0 0 5px #000, 0 0 10px #000, 0 0 15px sienna, 0 0 20px sienna, 0 0 25px sienna, 0 0 30px sienna, 0 0 35px sienna; }
     100% { text-shadow: 0 0 20px #000, 0 0 30px saddlebrown, 0 0 40px saddlebrown, 0 0 50px saddlebrown, 0 0 60px saddlebrown, 0 0 70px saddlebrown, 0 0 80px saddlebrown; }
@@ -345,11 +321,42 @@ iframe {
   }
 
 .person, .place {
-    font-variant: small-caps;
+    /* font-variant: small-caps; */
     color:sienna;
     font-weight: bold;
 }
 
 .person-name {
-    font-size: 9px;
+    font-size: 6px;
+}
+
+#bookmark {
+    position: fixed;
+    bottom: 10px; /* Position from the bottom of the page */
+    right: 10px; /* Position from the right of the page */
+    padding: 10px 20px; /* Inner spacing for the content */
+    background-color: #F3E9D2; /* Background color similar to paper */
+    font-family: 'EB Garamond', serif; /* Stylish, readable font */
+    color: sienna;
+    font-size: 14px; /* Size of the text, large enough to be easily read */
+    border: thick double saddlebrown; /* Gives a feeling of an outlined, tangible bookmark */
+    z-index: 1; /* Lower than other content, so it doesn't overlap anything */
+    cursor: pointer; /* Indicates the element is interactive */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Slight shadow for depth effect */
+    text-decoration: none; /* No underline to keep a clean look */
+
+    /* Optional: Adding some rounded corners */
+    border-radius: 5px; /* Slightly rounded corners can make it look more like a physical bookmark */
+}
+
+
+.dropdown-item-metadata {
+    font-variant: normal;
+    font-size: 14px; /* or whatever size you prefer */
+}
+
+
+/* If the bookmark contains a link, you can style the link state too */
+#bookmark:hover {
+    background-color: #e0d5c1; /* slightly darker paper color on hover */
 }
