@@ -10,12 +10,8 @@
   <!-- Favicon-->
   <link rel="icon" type="image/x-icon" href="../assets/favicon.ico" />
  <!-- Core theme CSS (includes Bootstrap)-->
- <link id="pagestyle" rel="stylesheet" type="text/css" href="../css/styles.css">
- <script>
-   function switchStyle(sheet) {
-     document.getElementById('pagestyle').setAttribute('href', sheet);
-   }
- </script>
+ <link id="pagestyle" rel="stylesheet" type="text/css" href="../css/retro.css">
+ <script src="../js/switcher.js"></script>
 </head>
 
 <body>
@@ -42,8 +38,8 @@
 
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" id="navbarDarkDropdownMenuLink" role="button"
-              data-bs-toggle="dropdown" aria-expanded="false" href="/university/index.html">
-              University
+              data-bs-toggle="dropdown" aria-expanded="false" href="/university/aldrovandi_bio.html">
+              Aldrovandi
             </a>
             <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
               <a class="dropdown-item" href="../university/aldrovandi_bio.html">Aldrovandi's Odissey</a>
@@ -71,8 +67,10 @@
               <a class="dropdown-item" onclick="switchStyle('../css/university.css')">Bootstrap default
           </li>
           <a class="dropdown-item" onclick="switchStyle('../css/aldrovandi.css')">Renaissance</li>
-            <a class="dropdown-item" onclick="switchStyle('../css/olga.css')">Olga's style</li>
-              <a class="dropdown-item" onclick="switchStyle('../css/alka.css')">Alka's style</li>
+            <a class="dropdown-item" onclick="switchStyle('../css/olga.css')">Victorian</li>
+              <a class="dropdown-item" onclick="switchStyle('../css/alka.css')">Art Deco</a>
+<a class="dropdown-item" onclick="switchStyle('../css/retro.css')">Retro</li>
+              <a class="dropdown-item" onclick="switchStyle('../css/hippie.css')">Hippie</a>
         </ul>
         </li>
 
@@ -116,31 +114,31 @@
         <div class="col-lg-6">
           <h2>Science as a Career in Enlightenment Italy</h2>
           <h2>The Strategies of Laura Bassi</h2>
-          <h5>By Paula Findlen*</h5>
+          <h5>By <span class="person" data-person-id="person_1"> Paula Findlen </span></h5>
 
           <p>When Man wears dresses And waits to fall in love Then Woman should
             take a degree.'
           </p>
 
           <p>
-            IN 1732 LAURA BASSI (1711-1778) became the second woman to receive
+            IN 1732 <span class="person" data-person-id="person_2"> LAURA BASSI </span>(1711-1778) became the second woman to receive
             a university degree and the first to be offered an official
             teaching position at any university in Europe. While many other
             women were known for their erudition, none received the
             institutional legitimation accorded Bassi, a graduate of and
-            lecturer at the University of Bologna and a member of the Academy
+            lecturer at the <span class="place" data-place-id="1"> University of Bologna </span> and a member of the Academy
             of the Institute for Sciences (Istituto delle Scienze), where she
             held the chair in experimental physics from 1776 until her death
             in 1778. In Germany she was held up as a model to encourage other
             learned women to receive formal recognition for their studies. In
             France she earned the praise of contributors to the article on
-            "Woman" that appeared in the Ency- clope'die; the Journal des
+            "Woman" that appeared in the Encyclopedia; the Journal des
             Dames devoted an article to her accomplishments in March 1775.
             Bassi left behind little of her scientific work, but her
             correspondence amply testifies to her accomplishments in and
             centrality to the learned world. She evoked the admiration of
             Voltaire and Francesco Algarotti, corresponded with natural phi-
-            losophers such as Roger Boscovich, Charles Bonnet, Jean Antoine
+            losophers such as <span class="person" data-person-id="person_3"> Roger Boscovich </span>, Charles Bonnet, Jean Antoine
             Nollet, Giam- battista Beccaria, Paolo Frisi, and Alessandro
             Volta, and numbered her cousin Laz- zaro Spallanzani among her
             pupils. As Voltaire wrote to her in 1744, "There is no
@@ -166,7 +164,7 @@
             science curriculum and in the constitution of a network of
             experimenters that connected Italy to the scientific culture of
             France and England. Other women natural philosophers published
-            more than she did-for example, Margaret Cavendish, Maria Sybilla
+            more than she did-for example,<span class="person" data-person-id="person_4"> Margaret Cavendish </span>, Maria Sybilla
             Mer- ian, and Voltaire's celebrated companion, Emilie du
             Chatelet-but Bassi was best at inserting herself within the
             academic world of science. This essay explores the conditions that

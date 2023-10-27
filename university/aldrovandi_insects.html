@@ -11,11 +11,7 @@
     <link rel="icon" type="image/x-icon" href="../assets/favicon.ico" />
     <!-- Core theme CSS (includes Bootstrap)-->
     <link id="pagestyle" rel="stylesheet" type="text/css" href="../css/aldrovandi.css">
-    <script>
-        function switchStyle(sheet) {
-            document.getElementById('pagestyle').setAttribute('href', sheet);
-        }
-    </script>
+    <script src="../js/switcher.js"></script>
 </head>
 
 <body>
@@ -42,8 +38,8 @@
 
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false" href="index.html">
-                            University
+                            aria-expanded="false" href="aldrovandi_bio.html">
+                            Aldrovandi
                         </a>
                         <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
                             <a class="dropdown-item" href="../university/aldrovandi_bio.html">Aldrovandi's Odissey</a>
@@ -73,8 +69,10 @@
                             <a class="dropdown-item" onclick="switchStyle('../css/university.css')">Bootstrap
                                     default</a>
                             <a class="dropdown-item" onclick="switchStyle('../css/aldrovandi.css')">Renaissance</a>
-                            <a class="dropdown-item" onclick="switchStyle('../css/olga.css')">Olga's style</a>
-                            <a class="dropdown-item" onclick="switchStyle('../css/alka.css')">Alka's style</a>
+                            <a class="dropdown-item" onclick="switchStyle('../css/olga.css')">Victorian</a>
+                            <a class="dropdown-item" onclick="switchStyle('../css/alka.css')">Art Deco</a>
+<a class="dropdown-item" onclick="switchStyle('../css/retro.css')">Retro</li>
+              <a class="dropdown-item" onclick="switchStyle('../css/hippie.css')">Hippie</a>
                         </ul>
                     </li>
 
@@ -95,19 +93,16 @@
                                     target="_blank">GitHub</a>
                         </ul>
                     </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                              aria-expanded="false">Metadata</a>
-                        <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
-                          <ul id="persons-details" class="dropdown-item">Persons</ul>
-                          <ul id="places-details" class="dropdown-item">Places</ul>
-                        </ul>
-                      </li>
                 </ul>
             </div>
         </div>
     </nav>
     <!-- Header - set the background image for the header in the line below-->
+    <div id="bookmark">Metadata
+        <ul>
+          <ul id="persons-details" class="dropdown-item">Persons</ul>
+          <ul id="places-details" class="dropdown-item">Places</ul>
+        </ul></div>
     <div class="context">
         <header class="py-5 bg-image-full background-image">
             <div class="text-center my-5">
@@ -168,7 +163,7 @@
                             the
                             case of the genus Libelloides Schäffer, 1763, with brightly coloured wings, represented
                             for some of the early taxonomists a puzzle for purposes of classification. Proof of this
-                            is the fact that both <span class="person" data-person-id="person_4">Giovanni Antonio
+                            is the fact that both <span class="person" data-person-id="person_3">Giovanni Antonio
                                 Scopoli</span> in his Entomologia Carniolica published
                             in 1763 and Michael Denis and Ignaz Schiffermüller in their anonymous work of 1775,
                             usually known as Wiener Verzeichnis, ascribed the current Libelloides macaronius and
@@ -185,12 +180,12 @@
                             Petiver, who seems to have been the first, in 1711, to provide a certain illustration of
                             an
                             owlfly, the current L. macaronius (Scopoli, 1763), using the name «Smyrna Butter-bolt»
-                            in his Gazophylacium (Petiverus 1711); <span class="person" data-person-id="person_5">Jacob
+                            in his Gazophylacium (Petiverus 1711); <span class="person" data-person-id="person_4">Jacob
                                 Christian Schäffer</span>, who in his monographic
                             study Das Zwiefalter oder Afterjungferchen, published in 1763, dealt with the
                             current L. coccajus ([Denis & Schiffermüller], 1775), calling it «Libelloides seu
                             Libellula
-                            spuria» (Schäffer 1763); and <span class="person" data-person-id="person_6">Albertus
+                            spuria» (Schäffer 1763); and <span class="person" data-person-id="person_5">Albertus
                                 Seba</span>, who in his Locupletissimi rerum naturalium
                             thesauri accurata descriptio, published in 1765, also provided illustrations of owlflies
                             (Seba 1765).</p>
@@ -288,7 +283,7 @@
                         <p class="image-note">Figure 3. Ulisse Aldrovandi, De animalibus insectis (1602), two hypothetic
                             larvae of
                             green lacewings, one of which (right) is a debris-carrier (woodcut at p. 763).</p>
-                        <p><span class="person" data-person-id="person_3">Bodenheimer</span> (1928–29: II, 345) did not
+                        <p><span class="person" data-person-id="person_6">Bodenheimer</span> (1928–29: II, 345) did not
                             attempt an identification, qualifying these
                             illustrations simply as «Insekten-Larven». The hypothesis that at least one could be a
                             debris-carrying larva of a green lacewing (e.g., a species of the current genus
@@ -299,7 +294,7 @@
                             Aldrovandi’s neuropterans are also later considered in the work Historiae naturalis
                             de insectis libri tres, published in 1653 (first edition) by the naturalist of Scottish
                             origin,
-                            <span class="person" data-person-id="person_8">John Jonston</span> (Johannes Jonstonus), who
+                            <span class="person" data-person-id="person_7">John Jonston</span> (Johannes Jonstonus), who
                             explicitly took into account the many insects
                             previously treated in the De animalibus insectis by Aldrovandi and in the Insectorum
                             sive minimorum animalium theatrum (1634) by Moufet, reproducing descriptions and
@@ -432,11 +427,11 @@
                             However, it took over a century and a half for the current term ‘ascalaph’ to appear in
                             entomological literature.</p>
                         <p>Indeed, this noun appeared scientifically thanks to <span class="person"
-                                data-person-id="person_9">Johann Christian Fabricius</span>, who
+                                data-person-id="person_8">Johann Christian Fabricius</span>, who
                             in 1775 instituted the genus Ascalaphus (van der Weele 1908; Aspöck et al. 1980).
                             The Latin word derives from the ancient Greek ἀσκάλαφος (askàlaphos − sort of owl
                             or barn owl), the name used by <span class="person"
-                                data-person-id="person_10">Aristotle</span> for an unspecified nocturnal bird of prey;
+                                data-person-id="person_9">Aristotle</span> for an unspecified nocturnal bird of prey;
                             but
                             Ἀσκάλαφος (Askàlaphos) is, in Greek mythology, a son of Ares, quoted in the Iliad;
                             or, according to other myths, a suitor of Helen, or a son of Acheron transformed by

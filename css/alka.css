@@ -12,109 +12,116 @@
     --gray: #808080;
   }
 
-.container{
-    display: grid;
-  grid-template-columns: 1fr 3fr; /* Two columns with a ratio of 1:3 */
-  grid-template-rows: auto 1fr auto; /* Three rows with automatic height for header and footer */
-  grid-template-areas:
-    "header header"
-    "nav main"
-    "footer footer";
-  min-height: 50vh;
-}
-h2{
-    /* font-family: 'Bentham', serif; */
-    font-family: 'Futura', sans-serif;
-    /* background-color:#EEE2DE; */
-    grid-area: header;
-  background-color: #000;
-  color: #fff;
-  padding: 20px;
-  
-    
-    
-}
-p{
-    /* font-family: 'Libre Baskerville', serif; */
-    font-family: 'Futura', sans-serif;
-    margin-left: 10%;
-    margin-right: 10%;
-    text-align: justify;
-    grid-area: main;
-    background-color: #fff;
-    padding: 20px;
-}
-body{
-    background-color: white;
-    border-style: dashed solid;
-    border: 6px solid red;
-    
-
-}
-.womanpaint{
-    margin: 10% 10% 15% -40%;
-    padding-left: 80%;
-    text-align: justify;
-    background-color: #F1C376;
-    transform: skewY(6deg);
-    display: flex;
-    /* flex-wrap: no-wrap; */
-    /* flex-direction: row-reverse; */
-    max-width: 50%;
-    border: thick double black;
-    /* display:inline-block;
-    margin-top: 2%;
-    margin-right: 2%;
-    margin-bottom: 2%;
-    margin-left: 2%;
-    width: 30%;
-     max-height: 300px;
-    border: thick double black; */
-}
-
-
-
-.celingpaint{
-    margin: 10% 10% 15% -80%;
-    padding-left: 145%;
-    text-align: left;
-    background-color: #F1C376;
-    border: 3vw solid #F1C376;
-    transform: skewY(6deg);
-    display: flex;
-    /* flex-wrap: no-wrap; */
-    flex-direction: row-reverse;
-    width: 40%;
-    border: thick double black;
-    
-    
-}
-.container{
-    display: flex;
-    /* grid-area: unset; */
-    background-color: #eee;
-    padding: 50px;
-    /* border-style: dashed solid;
-    border: 6px solid red; */
-}
 .navbar {
-    margin-left: 20px;
+    margin-left: 20px;   
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+}
+.navbar-brand{
+    color: #E21818;
+    font-family:'Futura', sans-serif;
+    font-size: 20px;
+    margin-bottom: 15px;
+    text-transform: capitalize;
+    text-decoration: double;
+    text-overflow: ellipsis;
+    text-align:left;
+    width: 100px;
+    height: 100px;
+    font-weight: bolder;
     
+}
+.navbar-nav{
+    display: flex;
+    grid-area: nav;
+  /* background-color: #ddd; */
+  padding: 30px;
+  font-weight: bolder;
+  font-style: oblique;
+  
+}
+.navbar-toggler {
+    display: none;
 }
 .nav-link {
     font-family: 'Rosarivo', serif;
-    font-weight: bold;
+    font-weight: bolder;
     font-variant: small-caps;
     color: red;
-    font-size: 15px;
-    margin-left: 5px;
-    margin-right: 5px;
-    
+    font-size: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+    justify-content: space-around;
+    border: none;
+    display: inline-block;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
 }
-.nav-item {
-    padding: 0 0;
+a{
+    color: red;
 }
-.dropdown-item {
+li a:hover, .nav-item:hover:hover .nav-link {
+    color: black;
+    font-size: small;
+  }
+
+li.nav-item {
+    display: inline-block;
+    width: 100px;
+  }
+#navbarSupportedContent{
+    display: inline-block;
+}
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    min-width: 160px; 
+    z-index: 1;
+}
+.dropdown-menu a {
+    color: black;
+    padding: 12px 16px; 
+    text-decoration:none ;
+    display: block;
+    text-align: left; 
+    font-size: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    text-decoration: none;
+    border-radius: 20%;
+  }
+.dropdown-menu a:hover {
+    color: #783c00;
+  }
+.nav-item:hover .dropdown-menu {
+    display: block;
+  }
+
+body{
+    background-color: #F3E99F;
+    display: inline-block;
+    overflow-x:hidden;
+    border-left: 1.5vw double red;
+    background-image: url(../assets/img/alkafonts/colours.jpg);
+}
+.context{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.container{
+    display: inline-block;
+  font-family:'Libre Baskerville';
+  display: flex;
+  /* background-color: #eee; */
+    padding: 90px;
+}
+/* .dropdown-item {
     display: block;
     font-family: 'Futura', sans-serif;
     font-weight: bold;
@@ -122,59 +129,10 @@ body{
     margin-left: 5px;
     padding-inline-start: 25px;
     
-}
-.navbar-toggler {
-    display: none;
-}
-.navbar-nav{
-    display: flex;
-    grid-area: nav;
-  background-color: #ddd;
-  padding: 20px;
-}
-.navbar-brand{
-    display: inline-block;
-    padding-top: 0.3125rem;
-    padding-bottom: 0.3125rem;
-    margin-right: 1rem;
-    font-size: 1.25rem;
-    line-height: inherit;
-    white-space: nowrap;
-    font-weight: bold;
-    color: red;
-    border-style: dashed solid;
-    border: 6px solid red;
-}
-
-
-.figuresize{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 30%;
-    
-}
-.author{
-    /* font-family: 'Libre Caslon Display', serif; */
-    font-family: 'Futura', sans-serif;
-    font-size: 60px;
-    font-weight: bold;
-    border-left: 4.5vw double red;
-
-
-}
-h2{
-    font-family: 'Libre Caslon Display', serif;
-    font-size: 50px;
-    font-weight: bold;
-    margin-left: 10%;
-    margin-right: 10%;
-    text-align: justify;
-
-}
+} */
 p::first-letter {
-    font-size: 2em;
-    font-weight: bold;
+    font-size: 2.5em;
+    font-weight: bolder;
     font-family: 'Libre Caslon Display', serif;
     vertical-align: top;
     float: left;
@@ -183,14 +141,113 @@ p::first-letter {
     color:red;
     border-bottom: 5px solid red;
 }
+h2{
+    /* font-family: 'Bentham', serif; */
+    /* font-family: 'Futura', sans-serif; */
+    /* background-color:#EEE2DE; */
+  font-family: 'Bentham', serif;
+    font-size: 4vw;
+    text-transform: uppercase;
+    text-align: justify;
+    /* text-align-last: justify; */
+    word-spacing: 1.7vw;
+    line-height: 100%; 
+    font-weight: bolder;
+    width: 100px;
+    /* height: 200px; */
+}
+.headings{
+    
+    margin-bottom: 10%;
+    display: flex;
+    
+    justify-content: flex-end;
+}
+header h2{
+    order: 1;
+    flex-basis: 62%;
+    margin: 0px;
+    border-right: 1.5vw solid red;
+    border-bottom: 0.5vw solid red;
+    padding-bottom: 1%;
+    padding-right: 2vw;
+    padding-left: 2vw;
+    margin-right: 0.1%;
+    max-height: 50%;
+}
+.author{
+    /* font-family: 'Libre Caslon Display', serif; */
+    order: 2;
+    font-family: 'Futura', sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    border-left: 1.5vw double red;
+    writing-mode: vertical-lr;
+    margin-right: 30px;
+    margin-left: 30px;
+
+
+}
+.womanpaint{
+   
+    /* flex-wrap: no-wrap; */
+    /* /* flex-direction: row-reverse; */
+   
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+    border: thick double black;
+    background-color: #F1C376 
+}
+p{
+    /* font-family: 'Libre Baskerville', serif; */
+    font-family: 'Futura', sans-serif;
+    margin-left: 10%;
+    margin-right: 10%;
+    text-align: justify;
+    grid-area: main;
+    /* background-color: hsl(0, 0%, 100%); */
+    padding: 20px;
+}
+
+
+.celingpaint{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+    border: thick double black;
+    background-color: #F1C376 
+     
+}
+
+.figuresize{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    font-style: italic;
+    font-family: 'Old Standard TT';
+    font-weight: bold;
+
+}
+
+/* h2{
+    font-family: 'Libre Caslon Display', serif;
+    font-size: 50px;
+    font-weight: bold;
+    margin-left: 10%;
+    margin-right: 10%;
+    text-align: justify;
+
+} */
+
 h1{
     color: black;
     margin-left: 10%;
 }
-.text-center{
-    border-style: dashed solid;
-    border: 6px solid red;
-}
+
 .text-white-100-no-opacity::first-letter {
     font-size: 1em;
     float: none;
@@ -199,8 +256,13 @@ h1{
     color: black;
 }
 
+
 .footer1{
     margin-top: 20%;
     border-style: dashed solid;
     border: 6px solid red;
+}
+.end{
+    font-family: 'Futura', sans-serif;
+    font-size: large;
 }

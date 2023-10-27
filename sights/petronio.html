@@ -10,12 +10,8 @@
   <!-- Favicon-->
   <link rel="icon" type="image/x-icon" href="../assets/favicon.ico" />
   <!-- Core theme CSS (includes Bootstrap)-->
-  <link id="pagestyle" rel="stylesheet" type="text/css" href="../css/styles.css">
-  <script>
-    function switchStyle(sheet) {
-      document.getElementById('pagestyle').setAttribute('href', sheet);
-    }
-  </script>
+  <link id="pagestyle" rel="stylesheet" type="text/css" href="../css/olga.css">
+  <script src="../js/switcher.js"></script>
 </head>
 
 <body>
@@ -40,8 +36,8 @@
 
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" id="navbarDarkDropdownMenuLink" role="button"
-              data-bs-toggle="dropdown" aria-expanded="false" href="/university/index.html">
-              University
+              data-bs-toggle="dropdown" aria-expanded="false" href="/university/aldrovandi_bio.html">
+              Aldrovandi
             </a>
             <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
               <a class="dropdown-item" href="../university/aldrovandi_bio.html">Aldrovandi's Odissey</a>
@@ -69,9 +65,10 @@
               <a class="dropdown-item" onclick="switchStyle('../css/university.css')">Bootstrap default
           </li>
           <a class="dropdown-item" onclick="switchStyle('../css/aldrovandi.css')">Renaissance</li>
-            <a class="dropdown-item" onclick="switchStyle('../css/olga.css')">Olga's style</li>
-              <a class="dropdown-item" onclick="switchStyle('../css/alka.css')">Alka's style</li>
-              <a class="dropdown-item" onclick="switchStyle('../css/barbie.css')">Barbie's style</li>
+            <a class="dropdown-item" onclick="switchStyle('../css/olga.css')">Victorian</li>
+              <a class="dropdown-item" onclick="switchStyle('../css/alka.css')">Art Deco</a>
+<a class="dropdown-item" onclick="switchStyle('../css/retro.css')">Retro</li>
+              <a class="dropdown-item" onclick="switchStyle('../css/hippie.css')">Hippie</a>
         </ul>
         </li>
 

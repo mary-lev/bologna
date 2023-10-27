@@ -10,19 +10,15 @@
   <!-- Favicon-->
   <link rel="icon" type="image/x-icon" href="../assets/favicon.ico" />
   <!-- Core theme CSS (includes Bootstrap)-->
-  <link id="pagestyle" rel="stylesheet" type="text/css" href="../css/alka.css">
-  <script>
-    function switchStyle(sheet) {
-      document.getElementById('pagestyle').setAttribute('href', sheet);
-    }
-  </script>
+  <link id="pagestyle" rel="stylesheet" type="text/css" href="../css/retro.css">
+  <script src="../js/switcher.js"></script>
 </head>
 
 <body>
   <!-- Responsive navbar-->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container">
-      <a class="navbar-brand" href="../index.html">Discovering Bolona</a>
+      <a class="navbar-brand" href="../index.html">Discovering Bologna</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -42,13 +38,13 @@
 
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" id="navbarDarkDropdownMenuLink" role="button"
-              data-bs-toggle="dropdown" aria-expanded="false" href="/university/index.html">
-              University
+              data-bs-toggle="dropdown" aria-expanded="false" href="/university/aldrovandi_bio.html">
+              Aldrovandi
             </a>
             <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
-              <a class="dropdown-item" href="../university/index.html#aldrovandi">Ulisse Aldrovandi</a>
-              <a class="dropdown-item" href="../university/index.html#pasolini">Pier Paolo Pasolini</a>
-              <a class="dropdown-item" href="../university/index.html#eco">Umberto Eco</a>
+              <a class="dropdown-item" href="../university/aldrovandi_bio.html">Aldrovandi's Odyssey</a>
+              <a class="dropdown-item" href="../university/aldrovandi_insects.html">De animalibus insectis</a>
+              <a class="dropdown-item" href="../university/aldrovandi_dragons.html">The Dragon of Bologna</a>
             </ul>
           </li>
 
@@ -71,8 +67,10 @@
               <a class="dropdown-item" onclick="switchStyle('../css/university.css')">Bootstrap default
           </li>
           <a class="dropdown-item" onclick="switchStyle('../css/aldrovandi.css')">Renaissance</li>
-            <a class="dropdown-item" onclick="switchStyle('../css/olga.css')">Olga's style</li>
-              <a class="dropdown-item" onclick="switchStyle('../css/alka.css')">Alka's style</li>
+            <a class="dropdown-item" onclick="switchStyle('../css/olga.css')">Victorian</li>
+              <a class="dropdown-item" onclick="switchStyle('../css/alka.css')">Art Deco</a>
+<a class="dropdown-item" onclick="switchStyle('../css/retro.css')">Retro</li>
+              <a class="dropdown-item" onclick="switchStyle('../css/hippie.css')">Hippie</a>
         </ul>
         </li>
 
@@ -113,10 +111,12 @@
     <div class="container my-5">
       <div class="row justify-content-center">
         <div class="col-lg-6">
+          <header class="headings">
           <h2>
             Artemisia Gentileschi's Self-Portrait as the Allegory of Painting*
           </h2>
           <p class="author">Mary D. Garrard</p>
+          </header>
           <p>
             In her Self-Portrait as the Allegory of Painting, <span class="person"
             data-person-id="person_1"> Artemisia
@@ -130,19 +130,19 @@
             previously been acknowledged.
           </p>
           <p>
-            In the Self-Portrait, which at present hangs in Kensington
-            Palace (Fig. 1),1 Artemisia depicted herself in the act of
+            In the Self-Portrait, which at present hangs in <span class="place" data-place-id="2"> Kensington
+            Palace</span> (Fig. 1), Artemisia depicted herself in the act of
             painting, accompanied by several, though not all, of the
             attributes of the female personification of Painting as set forth
             in Cesare Ripa's Iconologia. These include: a golden chain around
             her neck with a pendant mask which stands for imitation, unruly
             locks of hair which symbolize the divine frenzy of the artistic
             temperament, and drappo cangiante, garments with changing colors
-            which allude to the painter's skills.2 In 1962 Michael Levey
+            which allude to the painter's skills. In 1962 <span class="person" data-person-id="person_2"> Michael Levey</span>
             confirmed the identity of the artist through a comparison with
             other seventeenth-century images of Artemisia and connected the
-            picture with Ripa's description of Pittura.3 Levey's interpretation of the work as a self-portrait of the artist in the
-            guise of Pittura has gained general acceptance.4 Yet although his
+            picture with Ripa's description of Pittura. Levey's interpretation of the work as a self-portrait of the artist in the
+            guise of Pittura has gained general acceptance. Yet although his
             interpretation is iconographically correct, it remains
             iconologically incomplete, for the artist's unique artistic
             achievement has gone curiously unnoticed, a point best illustrated
@@ -165,7 +165,7 @@
             Pittura, or the allegorical representation of the art of painting
             as a female figure, made her appearance in Italian art sometime in
             the first half of the sixteenth century, along with the equally
-            new female personifications of sculpture and architecture. Vasari
+            new female personifications of sculpture and architecture. <span class="person" data-person-id="person_3"> Vasari </span>
             was the first artist to make systematic use of female
             personifications of the arts. We find them in the decorations of
             his house at Arezzo (Fig. 2), in those for his house in Florence
@@ -173,7 +173,7 @@
             that head the chapters of the Vite.5 The earliest
             sixteenth-century image of Pittura that I know was painted by
             Vasari in 1542, in the Stanza della Fama of his Arezzo house,
-            along with im- ages of Scultura, Architettura, and Poesia. Each is
+            along with images of Scultura, Architettura, and Poesia. Each is
             shown as an isolated female figure, seated and seen in profile,
             engaged in practicing the art she symbolizes. Vasari's archetypal
             Pittura is closely echoed in the mid-sixteenth-century engraving representing Pittura by Bartolommeo Passerotti
@@ -184,7 +184,7 @@
             <img class="womanpaint" src="../assets/img/Artemisia_Gentileschi_Self_Portrait_as_La_Pittura.jpeg"
               alt="Artemisia Gentileschi Self Portrait as La Pittura" />
           <p class="figuresize">
-            1. Artemisia Gentileschi, Self- Portrait as La Pittura.
+            Fig 1. Artemisia Gentileschi, Self- Portrait as La Pittura.
             London, Kensington Palace, Collection of Her Majesty the Queen (photo: Lord Chamberlain's Office, St.
             James's Palace)</p></figure>
           
@@ -193,11 +193,11 @@
             <img class="celingpaint" src="../assets/img/Vasari_La_Pittura_Arezzo_Casa_Vasari.jpg"
               alt=" Vasari, La Pittura. Arezzo, Casa Vasari (from Barocchi, Vasari pittore)" />
           <p class="figuresize">
-            2. Vasari, La Pittura. Arezzo, Casa Vasari (from Barocchi, Vasari pittore)</p>
+            Fig 2. Vasari, La Pittura. Arezzo, Casa Vasari (from Barocchi, Vasari pittore)</p>
           <img class="celingpaint" src="../assets/img/Passerotti-La_Pittur.jpg"
             alt="Passerotti, La Pittura. (photo: Metropolitan Museum of Art)" />
           <p class="figuresize">
-            3. Passerotti, La Pittura. (photo: Metropolitan Museum of Art)</p>
+          Fig3. Passerotti, La Pittura. (photo: Metropolitan Museum of Art)</p>
           </p>
           <p>The sixteenth-century creation of a noble personifica- tion for
             the art of painting constituted a kind of status symbol for that art, indicating the moment of its social and cultural arrival. In
@@ -212,14 +212,14 @@
             themselves were not personified in antiquity. Painting and
             Sculpture were occasionally included in Liberal Arts cycles on the
             porches of medieval cathedrals, specifically those of Sens, Laon,
-            and Chartres (north), and on the Florentine Campanile.9 Invariably
+            and Chartres (north), and on the Florentine Campanile. Invariably
             in these last in- stances, however, the personifying figure for
             Painting or Sculpture is not female but male, even when, as at
             Laon (Fig. 4), all of the other arts are shown as women. The dis-
             tinction is significant. These figures do not represent the Fine
             Arts, as has been suggested, since the Fine Arts did not yet exist
             as a concept, but rather the Mechanical Arts, or what would later
-            be called the crafts.10 In contrast to their female neighbors, the
+            be called the crafts. In contrast to their female neighbors, the
             male figures who stand for the guild-controlled crafts of painting
             and sculpture are not really personifications; rather, they
             represent artisans, And this in turn reflects the status of these
@@ -234,7 +234,7 @@
             In the fifteenth century, the seven Liberal Arts were raised to
             ten with the addition of Poetry, Philosophy, and Theology, as can
             be seen in the Tarocchi engravings, published in the 1460's, and
-            also on Pollaiuolo's Tomb of Sixtus IV in the Vatican, of around
+            also on<span class="place" data-place-id="3"> Pollaiuolo's Tomb</span> of Sixtus IV in the Vatican, of around
             1490, where Poetry was replaced by Perspective. Painting and
             Sculpture were still not included among the Liberal Arts,'2
             despite the earlier efforts of Ghiberti, Alberti, and the
@@ -261,7 +261,7 @@
             from manual to intellectual activities.
             <img class="womanpaint" src="../assets/img/figures_from_Liberal_Arts.jpeg" alt="al, figures from Liber" />
           <p class="figuresize">
-            4. Laon Cathedral, figures from Liberal Arts included among the Liberal Arts; indeed, the Artisan (Fig.
+            Fig 4. Laon Cathedral, figures from Liberal Arts included among the Liberal Arts; indeed, the Artisan (Fig.
             cycle (from Viollet-le Duc, Dictionnaire raisonnk,II, figs. 12-15)
           </p>
           
@@ -270,7 +270,7 @@
             <img class="womanpaint" src="../assets/img/Tarocchi_engravings.jpeg"
               alt="The Artisan, Tarocchi engravings" />
           <p class="figuresize">
-            5. The Artisan, Tarocchi engravings, E series (photo: National Gallery of Art)
+            Fig 5. The Artisan, Tarocchi engravings, E series (photo: National Gallery of Art)
           </p>
           <p>Laelonardo's famous argument for the inclusion of painting (though
             not sculpture) among the Liberal Arts on account of its ts genesis
@@ -324,18 +324,18 @@
             personifications of the arts with narrative scenes from the life
             of Apelles, and added a row of portraits of famous painters along
             the tops of the walls (Fig. 6).21 The campaign to elevate the
-            status of art was extended to Rome, where the counterpart for
+            status of art was extended to <span class="place" data-place-id="3"> Rome</span>, where the counterpart for
             Vasari’s cycle can be seen in the residence of Federico Zuccaro,
             who was the principal founder of the Accademia di S. Luca, the
             institutional successor to the Florentine Academy. Zuccaro’s
-            ceiling fresco of 1598 in the Palazzo Zuccaro depicting the
+            ceiling fresco of 1598 in the <span class="place" data-place-id="4"> Palazzo Zuccaro</span> depicting the
             Apotheosis of the Artist (Fig. 7) presents an idealized male
             artist accompanied by Athena and Apollo, the protectors of the
-            arts, who also serve here to sustain the allegorical mode.22 The
+            arts, who also serve here to sustain the allegorical mode. The
             spreading effort to propagandize on behalf of the elevated status
             of art paralleled and sometimes preceded the foundation of art
             academies, a phenomenon exemplified by a painting, Athena
-            Introducing Pittura to the Liberal Arts, by Hans von Aachen (Fig.
+            Introducing Pittura to the Liberal Arts, by <span class="person" data-person-id="person_4"> Hans von Aachen </span> (Fig.
             8), executed in Cologne around the turn of the seventeenth
             century.”3 In this work, as in the Italian examples, the
             glorification of art is coupled with enhancement of the social
@@ -345,31 +345,31 @@
             <img class="womanpaint" src="../assets/img/Vasari-Sala_dela_Fama.jpeg"
               alt="Vasari,Sala dela Fama. Florence, Casa Vasari" />
           <p class="figuresize">
-            <b>6. Vasari,Sala dela Fama. Florence, Casa Vasari (photo: Florence, Soprinten- denza alle Gallerie)</b>
+            <b>Fig 6. Vasari,Sala dela Fama. Florence, Casa Vasari (photo: Florence, Soprinten- denza alle Gallerie)</b>
           </p>
          
           <p>
             Another mode of propagandizing for the status of art, and the
             second thematic tradition to be examined here, was
             self-portraiture in which the artist’s personal status as a
-            gentleman was emphasized. Self-portraits such as that by Antonio
-            Moro in the Uffizi (Fig. 9) in which the artist stands before his
+            gentleman was emphasized. Self-portraits such as that by <span class="person" data-person-id="person_5"> Antonio
+            Moro </span> in the Uffizi (Fig. 9) in which the artist stands before his
             easel, holding palette, brushes, and mahlstick, yet with the
             menial implications of these tools offset by his fine clothes and
             by the attachment to the blank canvas of a poem written in Greek,
             were clearly intended to place the painter among the learned and
-            to differentiate him from the mere artisan.24 An even more pointed
+            to differentiate him from the mere artisan. An even more pointed
             expression of the social prestige of the artist can
             <img class="womanpaint" src="../assets/img/Apotheosis_of_the_Artist_ceiling.jpeg"
               alt="Apotheosis of the Artist ceiling" />
           <p class="figuresize">
-            <b>7. Zuccaro, Apotheosis of the Artist ceiling (photo: Biblioteca Heatziana)
+            <b>Fig 7. Zuccaro, Apotheosis of the Artist ceiling (photo: Biblioteca Heatziana)
             </b>
           </p>
           <img class="womanpaint" src="../assets/img/Introducing_painting_to_the_liberal_Arts.jpeg"
             alt="Hans von Aachen, Athena Introducing painting to the liberal Arts. " />
           <p class="figuresize">
-            <b>8. Hans von Aachen, Athena Introducing painting to the liberal Arts. Brussels, Collection Mrs. Sonia
+            <b>Fig 8. Hans von Aachen, Athena Introducing painting to the liberal Arts. Brussels, Collection Mrs. Sonia
               Gilbert (Photo: Warburg Institute)
             </b>
           </p>
@@ -377,9 +377,9 @@
           the numerous self-portraits of the sixteenth and seventeenth
           centuries that depict the artist wearing a golden chain, a
           reminder of the rank conferred upon him by a ruler. Perhaps the
-          noblest example of this genre is Titian’s Self-Portrait of ca.
-          1550 in Berlin (Fig. 10), which shows the painter wearing the
-          tokens of rank given him twice by the Emperor Charles V.25 Such an
+          noblest example of this genre is <span class="person" data-person-id="person_6"> Titian’s </span> Self-Portrait of ca.
+          1550 in <span class="place" data-place-id="5"> Berlin </span> (Fig. 10), which shows the painter wearing the
+          tokens of rank given him twice by the <span class="person" data-person-id="person_7"> Emperor Charles V</span>. Such an
           expression of the social exchange between ruler and artist, and of
           their comparable prestige, had as its original model the
           relationship between Alexander the Great and Apelles, symbolized
@@ -388,7 +388,7 @@
           became a popular theme in its own right in Renaissance art, as
           well as a metaphor for the exalted status of painting, a
           development that is illustrated in a print designed by the
-          seventeenth-century French artist Sebastien Bourdon (Fig. 11), in
+          seventeenth-century French artist <span class="person" data-person-id="person_8"> Sebastien Bourdon </span> (Fig. 11), in
           which the Apelles and Alexander theme is used to symbolize the art
           of painting, as its label PICTURA clearly shows.
           </p>
@@ -421,7 +421,7 @@
             artist who was able effectively to convert the image of the
             artist’s studio into a metaphor for art itself in its higher,
             unmechanical aspects. The engraving of 1531 by Agostino Veneziano
-            of Bandinelli’s ‘‘academy’’ (Fig. 13), and a counterpart engraved
+            of Bandinelli’s " academy" (Fig. 13), and a counterpart engraved
             some twenty years later by Aenea Vico, are both presumed to follow
             Bandinelli’s own designs. These prints illustrate yet another way
             that the artist might attest the noble and intellectual character
@@ -456,7 +456,7 @@
             pride, at the same time pointing very self-consciously to a giant
             sunflower. Both attributes symbolize the art of painting, and form
             a composite expression of the artist’s devotion to “his King, to
-            God and to the art of painting.’”33 An equally ingenious though
+            God and to the art of painting.” An equally ingenious though
             aesthetically deficient solution was offered by G. D. Cerrini
             (Fig. 17), who, in a painting of the mid-seventeenth century,
             combined the Allegory of Painting with a self-image by having the
@@ -587,23 +587,23 @@
             they symbolize. The misogynist basis of the lofty theme sounded by
             Ripa is revealed in a satirical Italian print of the seventeenth
             century, a woodcut that illustrates a popular maxim (Fig. 18).
-            ‘’Women,” the maxim asserts, “often have long dresses and short
-            intellects.’’42 This particular misogynist conception can be
-            traced as far back as the Rig Veda (‘The mind of woman brooks not
-            discipline. Her intellect has little weight.’’)43 and as far
+            " Women,” the maxim asserts, “often have long dresses and short
+            intellects."42 This particular misogynist conception can be
+            traced as far back as the Rig Veda ("The mind of woman brooks not
+            discipline. Her intellect has little weight.")43 and as far
             forward, in the Gentileschi literature alone, as Longhi’s
             appraisal of 1916 that she was “una pittrice di razza,
             manualmente; come intelletto soltanto inferiore; anche a suo
-            padre.’’44 Although contemporary judgments of Artemisia’s
+            padre."44 Although contemporary judgments of Artemisia’s
             intellectual capacities have not survived, we do find in the
             artist's correspondence occasional expressions of a heightened
             sensitivity to conventional views of woman’s ability. Writing in
             1649 to her Sicilian patron Don Antonio Ruffo, she described to
             him some of her forthcoming paintings, concluding defiantly: ‘And
-            this will show your Lordship what a woman can do.’’45 In another
+            this will show your Lordship what a woman can do."45 In another
             letter written to Ruffo in the same year, Artemisia remarked
             expansively, “You will find the spirit of Caesar in this soul of a
-            woman.”’46 In this statement, the artist’s play on words (Caesar’s
+            woman.” 46 In this statement, the artist’s play on words (Caesar’s
             animo, her anima) serves to underscore the gender difference that
             makes her claim unorthodox. Yet the claim itself boldly transcends
             sex differences, for she applies to herself a literary formula
@@ -630,7 +630,7 @@
     <div class="container my-5">
       <div class="row justify-content-center">
         <div class="col-lg-6">
-          <h2>Do you like what you see?</h2>
+          <h2 class="end">Do you like what you see?</h2>
           <p class="lead">
             Our user-friendly interface allows you to seamlessly navigate
             between articles and visualize their locations on an interactive
