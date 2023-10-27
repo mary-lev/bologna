@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
+body {
+background-color: #e0218a;
+}
+
+.fs-3 {
+    font-family: "Great Vibes", serif;
+    font-size: 70px;
+    font-weight:bold;
+    color: white;
+    text-align: center;
+}
+
+
