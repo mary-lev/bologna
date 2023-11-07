@@ -150,7 +150,6 @@ img {
     margin-left: 5px;
     padding-inline-start: 25px;
 }
-
 .navbar-toggler {
     display: none;
 }
@@ -217,6 +216,16 @@ p::first-letter {
     line-height: normal;
     color: rgb(233, 104, 18);
     /* border: 2px solid saddlebrown; */
+}
+.figuresize::first-letter {
+    font-size: 30px;
+    color: rgb(0, 0, 0);
+    font-weight: normal;
+    float: none;
+    margin: 0;
+    vertical-align: baseline;
+
+
 }
 
 a {
