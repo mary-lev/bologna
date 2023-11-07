@@ -18,6 +18,9 @@
   display: flex;
   text-align: center;
   justify-content: space-around;
+  margin-left: 5rem;
+  margin-right: 5rem;
+  gap: 2rem;
 }
   
   
@@ -29,8 +32,8 @@
 .nav-link {
   color: #783c00;
   text-align: center;
-  padding: 14px;
-  background-image: url(../assets/Olgafont/letter5.jpeg) ;
+  /* padding: 14px; */
+  /* background-image: url(../assets/Olgafont/); */
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -38,12 +41,12 @@
   border-radius: 20%;
   font-size: 30px;
   width: 100%;
-  justify-content: space-around;
-  border: none;
-  display: inline;
-  align-items: center;
+  /* justify-content: space-around; */
+  /* border: none; */
+  /* display: inline; */
+  /* align-items: center; */
   cursor: pointer;
-  position: relative;
+  /* position: relative; */
 
 }
 
@@ -65,20 +68,16 @@ li.nav-item {
 
 .dropdown-menu a {
   color: black;
-  padding: 12px 16px; 
-  text-decoration:none ;
-  display: block;
-  text-align: left; 
   font-size: 30px;
-  margin-left: auto;
-  margin-right: auto;
   font-family: "Italianno", serif;
-  background-image: url(../assets/Olgafont/letter5.jpeg);
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
   text-decoration: none;
-  border-radius: 20%;
+  
+  padding-left: 0 !important;
+  margin: 0;
+
 }
 
 .dropdown-menu a:hover {
@@ -87,7 +86,17 @@ li.nav-item {
 
 
 .nav-item:hover .dropdown-menu {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  background-image: url(../assets/Olgafont/letter5.jpeg);
+  border-radius: 1rem;
+  align-items: flex-start;
+  margin-left: 0;
+  
+}
+
+.nav-item:hover:last-child .dropdown-menu {
+  transform: translateX(-10rem);
 }
 
 

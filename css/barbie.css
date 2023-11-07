@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
+body {
+background-color: white;
+}
+
+.fs-3 {
+    font-family: "Great Vibes", serif;
+    font-size: 70px;
+    font-weight:bold;
+    color: #e0218a;
+    text-align: center;
+}
+
+.navbar-nav {
+    color: white;
+    
+}
+
+.navbar-nav a {
+    color: white;
+    
+}
+
+.container {
+    display: grid ;
+    grid-template-rows: 1fr;
+    grid-template-columns: 2fr 10fr;
+    background: #e0218a;
+    /* color: white; */
+    text-decoration: none;
+    font-family: "Great Vibes", serif;
+    font-size: 30px;
+    background-image: url(../assets/barbie/1.gif);
+}
+
+
+.img-barbie {
+    display: flex !important;
+    /* border: 1px solid red; */
+    max-width: fit-content;
+    max-height: fit-content;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* background-color: red !important; */
+    /* background-image: url(../assets/barbie/barbie.gif); */
+}
+
+.img-barbie img {
+    width: 5rem;
+    height: auto;
+}
+
+.context header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 0
+}
+
+.context header .text-center{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* border: 1px solid red; */
+}
+    /* grid-template-areas: "navbar-brand navbar-nav navbar-toggler; */
+    /* justify-items: stretch;
+    align-items: stretch; */
+    /* column-gap: 20px;
+} */
+
+/* .navbar-brand {
+    background: #e0218a;
+    /* grid-area: logo; */
+  /*  
+} */
+
+.navbar-collapse{
+    border: 1px solid red;
+}
+
+/* .navbar-nav{
+    background: pink;
+    grid-area: container;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+} */
+
+.navbar-toggler {
+    display: none;
+  
+  }
+
+
+  .nav-item:hover .dropdown-menu {
+    display: grid;
+  }
+
+  .dropdown-menu a:hover {
+    color: black;
+    display: grid;
+  }
+
+  li a:hover, .nav-item:hover:hover .nav-link {
+    color: black;
+  }
+
+  .dropdown-menu {
+    display: none;
+    position: absolute;
+    min-width: 160px; 
+    z-index: 1;
+  }
+  .nav-item:hover .dropdown-menu {
+    display: grid;
+    flex-direction: column;
+    border-radius: 1rem;
+    align-items: flex-start;
+    margin-left: 0;
+    background-color: #e0218a;   
+    opacity: 0.8; 
+    background-image: url(../assets/barbie/1.gif);
+  }
+
+  .navbar-nav {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    background-image: url(../assets/barbie/1.gif);
+  }
+

@@ -9,14 +9,16 @@
   <title>Discovering Bologna</title>
   <!-- Favicon-->
   <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
-  <!-- Core theme CSS (includes Bootstrap)-->
-  <link href="css/styles.css" rel="stylesheet" />
-
+  <!-- Core theme CSS and switcher for the syles-->
+  <link id="pagestyle" rel="stylesheet" type="text/css" href="css/styles.css">
+  <script src="/js/switcher.js"></script>
+  <!-- LeafletJs -->
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.4.0/dist/leaflet.css"
     integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
     crossorigin="">
-  <script src="http://unpkg.com/leaflet@latest/dist/leaflet.js"></script>
-  <script src="js/leaflet-providers.js"></script>
+  <script src="https://unpkg.com/leaflet@latest/dist/leaflet.js"></script>
+  <script src="https://unpkg.com/leaflet-providers@latest/leaflet-providers.js"></script>
+  
 </head>
 
 <body>
@@ -34,16 +36,16 @@
             <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button"
               data-bs-toggle="dropdown" aria-expanded="false">Sights</a>
             <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
-              <a class="dropdown-item" href="sights/petronio.html">The Church of San Petronio in Bologna</a> 
+              <a class="dropdown-item" href="sights/petronio.html">The Church of San Petronio in Bologna</a>
               <a class="dropdown-item" href="sights/secrets.html">Seven Secrets of Bologna</a>
               <a class="dropdown-item" href="sights/torri.html">Towers of Bologna</a>
             </ul>
           </li>
 
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" id="navbarDarkDropdownMenuLink" role="button"
-              data-bs-toggle="dropdown" aria-expanded="false" href="/university/index.html">
-              University
+            <a class="nav-link dropdown-toggle" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false" href="/university/aldrovandi_bio.html">
+              Aldrovandi
             </a>
             <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
               <a class="dropdown-item" href="university/aldrovandi_bio.html">Aldrovandi’s Odissey</a>
@@ -71,29 +73,31 @@
             <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button"
               data-bs-toggle="dropdown" aria-expanded="false">
               Style </a>
-            <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
-              <a class="dropdown-item" onclick="switchStyle('css/university.css')">Bootstrap default
-          </li>
-          <a class="dropdown-item" onclick="switchStyle('css/aldrovandi.css')">Renaissance</li>
-            <a class="dropdown-item" onclick="switchStyle('css/olga.css')">Victorian</li>
-              <a class="dropdown-item" onclick="switchStyle('css/alka.css')">Art Deco</a>
-              <a class="dropdown-item" onclick="switchStyle('css/hippie.css')">Hippie</a></ul>
+              <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+                <a class="dropdown-item" onclick="switchStyle('../css/university.css')">Bootstrap default
+                <a class="dropdown-item" onclick="switchStyle('../css/aldrovandi.css')">Renaissance</a>
+                <a class="dropdown-item" onclick="switchStyle('../css/olga.css')">19th century</a>
+                <a class="dropdown-item" onclick="switchStyle('../css/alka.css')">Art Deco</a>
+                <a class="dropdown-item" onclick="switchStyle('../css/retro.css')">Retro</a>
+                <a class="dropdown-item" onclick="switchStyle('../css/hippie.css')">Hippie</a>
+                <a class="dropdown-item" onclick="switchStyle('../css/barbie.css')">Barbie</a>
+              </ul>
         </li>
 
 
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button"
-              data-bs-toggle="dropdown" aria-expanded="false">
-              About
-            </a>
-            <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
-              <a class="dropdown-item" href="documentation.html">Documentation</a>
-              <a class="dropdown-item" href="disclaimer.html">Disclaimer</a>
-              <a class="dropdown-item" href="about.html">About us</a>
-              <a class="nav-link" title="Star on GitHub" href="https://github.com/mary-lev/bologna"
-                target="_blank">GitHub</a>
-            </ul>
-          </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button"
+            data-bs-toggle="dropdown" aria-expanded="false">
+            About
+          </a>
+          <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+            <a class="dropdown-item" href="documentation.html">Documentation</a>
+            <a class="dropdown-item" href="disclaimer.html">Disclaimer</a>
+            <a class="dropdown-item" href="about.html">About us</a>
+            <a class="nav-link" title="Star on GitHub" href="https://github.com/mary-lev/bologna"
+              target="_blank">GitHub</a>
+          </ul>
+        </li>
         </ul>
       </div>
     </div>
@@ -146,34 +150,45 @@
   </footer>
   <!-- Bootstrap core JS-->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-  <!-- Core theme JS-->
-  <script src="js/scripts.js"></script>
-  <!-- LeafletJs -->
-  <script src="https://unpkg.com/leaflet@1.4.0/dist/leaflet.js"
-    integrity="sha512-QVftwZFqvtRNi0ZyCtsznlKSWOStnDORoefr1enyq5mVL4tmKB3S/EnC3rRJcxCPavG10IcrVGSmPh6Qw5lwrg=="
-    crossorigin=""></script>
-  <script src="js/leaflet-providers.js"></script>
+
   <script>
+
 
     var map = L.map('map').setView([44.49491, 11.34271], 15);
 
-    var Stamen_Watercolor = L.tileLayer('https://stamen-tiles-{s}.a.ssl.fastly.net/watercolor/{z}/{x}/{y}.{ext}', {
-      attribution: 'Map tiles by <a href="http://stamen.com">Stamen Design</a>, <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a> &mdash; Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
-      subdomains: 'abcd',
+    var Stadia_StamenWatercolor = L.tileLayer('https://tiles.stadiamaps.com/tiles/stamen_watercolor/{z}/{x}/{y}.{ext}', {
       minZoom: 1,
       maxZoom: 16,
+      attribution: '&copy; <a href="https://www.stadiamaps.com/" target="_blank">Stadia Maps</a> &copy; <a href="https://www.stamen.com/" target="_blank">Stamen Design</a> &copy; <a href="https://openmaptiles.org/" target="_blank">OpenMapTiles</a> &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
       ext: 'jpg'
     });
 
-    L.tileLayer.provider('Stamen.Watercolor').addTo(map);
+    L.tileLayer.provider('Stadia.StamenWatercolor').addTo(map);
 
-    var marker = L.marker([44.49072, 11.33469]).addTo(map);
-    var marker2 = L.marker([44.48991, 11.33439]).addTo(map);
+    // Function to add a marker for each point
+    function addMarker(point, open) {
+      var marker = L.marker(point.coordinates).addTo(map);
+      var popup = marker.bindPopup(`<b>${point.name}</b><br />${point.description}`);
 
-    var popup = marker.bindPopup('<b>Pasolini"s house</b><br />Via Nosadella, 48');
-    var popup2 = marker2.bindPopup('<b>Palazzo Albergati</b><br />Via Saragozza, 26');
+      // Check if this popup should be opened immediately
+      if (open) {
+        popup.openPopup();
+      }
+    }
 
-    popup.openPopup();
+    // Fetch the data from the external file
+    fetch('data.json')
+      .then(response => response.json())  // Parse the JSON from the response
+      .then(data => {
+        // Once the data is loaded, add a marker for each point
+        // Open the first popup immediately
+        for (let i = 0; i < data.length; i++) {
+          addMarker(data[i], i === 0);  // Open only the first popup
+        }
+      })
+      .catch(error => {
+        console.error('Error fetching data: ', error);
+      });
 
   </script>
 </body>

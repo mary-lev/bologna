@@ -11,11 +11,7 @@
   <link rel="icon" type="image/x-icon" href="../assets/favicon.ico" />
   <!-- Core theme CSS (includes Bootstrap)-->
   <link id="pagestyle" rel="stylesheet" type="text/css" href="../css/retro.css">
-  <script>
-    function switchStyle(sheet) {
-      document.getElementById('pagestyle').setAttribute('href', sheet);
-    }
-  </script>
+  <script src="../js/switcher.js"></script>
 </head>
 
 <body>
@@ -42,13 +38,13 @@
 
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" id="navbarDarkDropdownMenuLink" role="button"
-              data-bs-toggle="dropdown" aria-expanded="false" href="/university/index.html">
-              University
+              data-bs-toggle="dropdown" aria-expanded="false" href="/university/aldrovandi_bio.html">
+              Aldrovandi
             </a>
             <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
-              <a class="dropdown-item" href="../university/index.html#aldrovandi">Ulisse Aldrovandi</a>
-              <a class="dropdown-item" href="../university/index.html#pasolini">Pier Paolo Pasolini</a>
-              <a class="dropdown-item" href="../university/index.html#eco">Umberto Eco</a>
+              <a class="dropdown-item" href="../university/aldrovandi_bio.html">Aldrovandi's Odyssey</a>
+              <a class="dropdown-item" href="../university/aldrovandi_insects.html">De animalibus insectis</a>
+              <a class="dropdown-item" href="../university/aldrovandi_dragons.html">The Dragon of Bologna</a>
             </ul>
           </li>
 
@@ -70,10 +66,12 @@
             <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
               <a class="dropdown-item" onclick="switchStyle('../css/university.css')">Bootstrap default
           </li>
-          <a class="dropdown-item" onclick="switchStyle('../css/aldrovandi.css')">Renaissance</li>
-            <a class="dropdown-item" onclick="switchStyle('../css/olga.css')">Victorian</li>
+          <a class="dropdown-item" onclick="switchStyle('../css/aldrovandi.css')">Renaissance</a>
+            <a class="dropdown-item" onclick="switchStyle('../css/olga.css')">19th century</a>
               <a class="dropdown-item" onclick="switchStyle('../css/alka.css')">Art Deco</a>
+              <a class="dropdown-item" onclick="switchStyle('../css/retro.css')">Retro</a>
               <a class="dropdown-item" onclick="switchStyle('../css/hippie.css')">Hippie</a>
+              <a class="dropdown-item" onclick="switchStyle('../css/barbie.css')">Barbie</a>
         </ul>
         </li>
 

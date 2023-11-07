@@ -26,12 +26,7 @@
 
   <!-- Core theme CSS (includes Bootstrap)-->
   <link id="pagestyle" rel="stylesheet" type="text/css" href="../css/aldrovandi.css">
-  <script>
-    function switchStyle(sheet) {
-      document.getElementById('pagestyle').setAttribute('href', sheet);
-    }
-  </script>
-
+  <script src="../js/switcher.js"></script>
 </head>
 
 <body>
@@ -55,9 +50,9 @@
           </li>
 
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="index.html" id="navbarDarkDropdownMenuLink" role="button"
+            <a class="nav-link dropdown-toggle" href="aldrovandi_bio.html" id="navbarDarkDropdownMenuLink" role="button"
               data-bs-toggle="dropdown" aria-expanded="false">
-              University
+              Aldrovandi
             </a>
             <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
               <a class="dropdown-item" href="../university/aldrovandi_bio.html">Aldrovandi's Odissey</a>
@@ -83,13 +78,15 @@
           <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button"
             data-bs-toggle="dropdown" aria-expanded="false">
             Style </a>
-          <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
-            <a class="dropdown-item" onclick="switchStyle('../css/university.css')">Bootstrap default
-                <a class="dropdown-item" onclick="switchStyle('../css/aldrovandi.css')">Renaissance</a>
-          <a class="dropdown-item" onclick="switchStyle('../css/olga.css')">Victorian</a>
-            <a class="dropdown-item" onclick="switchStyle('../css/alka.css')">Art Deco</a>
+            <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+              <a class="dropdown-item" onclick="switchStyle('../css/university.css')">Bootstrap default
+              <a class="dropdown-item" onclick="switchStyle('../css/aldrovandi.css')">Renaissance</a>
+              <a class="dropdown-item" onclick="switchStyle('../css/olga.css')">19th century</a>
+              <a class="dropdown-item" onclick="switchStyle('../css/alka.css')">Art Deco</a>
+              <a class="dropdown-item" onclick="switchStyle('../css/retro.css')">Retro</a>
               <a class="dropdown-item" onclick="switchStyle('../css/hippie.css')">Hippie</a>
-                </ul>
+              <a class="dropdown-item" onclick="switchStyle('../css/barbie.css')">Barbie</a>
+            </ul>
                 </li>
 
                 <li class="nav-item">
@@ -109,20 +106,16 @@
                       target="_blank">GitHub</a>
                   </ul>
                 </li>
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                    aria-expanded="false">Metadata</a>
-                  <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
-                    <ul id="persons-details" class="dropdown-item">Persons</ul>
-                    <ul id="places-details" class="dropdown-item">Places</ul>
-                  </ul>
-                </li>
                 </ul>
       </div>
     </div>
   </nav>
   <!-- Header - set the background image for the header in the line below-->
-
+  <div id="bookmark">Metadata
+  <ul>
+    <ul id="persons-details" class="dropdown-item">Persons</ul>
+    <ul id="places-details" class="dropdown-item">Places</ul>
+  </ul></div>
   <div class="context">
     <header class="py-5 bg-image-full background-image">
       <div class="text-center my-5">
@@ -195,8 +188,7 @@
               was deeply convinced that a specimen was not accurately described if not illustrated in the minutest
               detail. Truth-to-nature should also be a guiding principle for art, as Aldrovandi expressed in his letters
               to <a href="https://en.wikipedia.org/wiki/Gabriele_Paleotti" target="_blank"><span class="person"
-                  data-person-id="person_1">Cardinal Gabriele</span>
-                Paleotti</a>, an important art theorist of the Counter-Reformation, who greatly valued the naturalist’s
+                  data-person-id="person_3">Cardinal Gabriele Paleotti</span></a>, an important art theorist of the Counter-Reformation, who greatly valued the naturalist’s
               opinions. </p>
             <p>At his death on 4 May 1605, Aldrovandi bequeathed his museum, library and manuscripts to the Bolognese
               government. Initially displayed in the city’s <span class="place" data-place-id="7">Palazzo
@@ -206,7 +198,8 @@
                 href="http://www.museopalazzopoggi.unibo.it/setLocale.do?lang=en" target="_blank"><span class="place"
                   data-place-id="8">Palazzo Poggi</span>
                 museum</a>.</p>
-            <p>References: Olivier Bonfait and François Quiviger. “Aldrovandi.” Grove Art Online. Oxford Art Online.
+                <h3>References</h3>
+            <p>Olivier Bonfait and François Quiviger. “Aldrovandi.” Grove Art Online. Oxford Art Online.
               Oxford University Press. <a
                 href="http://www.oxfordartonline.com/subscriber/article/grove/art/T001649;%C2%A0Giuseppe"
                 target="_blank">http://www.oxfordartonline.com</a> Giuseppe Olmi, “Ulisse Aldrovandi and the Bolognese
