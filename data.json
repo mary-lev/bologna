@@ -1,12 +1,34 @@
 [
   {
-    "name": "Pasolini's house",
-    "description": "Via Nosadella, 48",
-    "coordinates": [44.49072, 11.33469]
+    "name": "University of Bologna",
+    "description": "Alma Mater Studiorum",
+    "coordinates": [
+      44.494167,
+      11.342222
+    ]
   },
   {
-    "name": "Palazzo Albergati",
-    "description": "Via Saragozza, 26",
-    "coordinates": [44.48991, 11.33439]
+    "name": "Palazzo Poggi",
+    "description": "Museum housing Aldrovandi's collection unified with Cospi's",
+    "coordinates": [
+      44.496608,
+      11.352598
+    ]
+  },
+  {
+    "name": "Palazzo Pubblico",
+    "description": "Former display site of Aldrovandi's cabinet of curiosities",
+    "coordinates": [
+      44.497411,
+      11.345355
+    ]
+  },
+  {
+    "name": "Biblioteca Universitaria di Bologna",
+    "description": "Historical library in Bologna, Italy",
+    "coordinates": [
+      44.496944,
+      11.352778
+    ]
   }
 ]

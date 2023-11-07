@@ -38,10 +38,10 @@ for (let type of types) {
                 try {
                     let navbarHeight = 0;
                     const currentStyleHref = document.getElementById('pagestyle').getAttribute('href');
-                    if (currentStyleHref.includes('university.css') | currentStyleHref.includes('styles.css')) {
+                    if (['university.css', 'styles.css', 'hippie.css'].some(css => currentStyleHref.includes(css))) {
                         navbarHeight = document.querySelector('.navbar').offsetHeight;
                     }
-                    const elementPosition = el.getBoundingClientRect().top + window.pageYOffset;
+                    const elementPosition = el.getBoundingClientRect().top + window.scrollY;
                     const adjustedScrollPosition = elementPosition - navbarHeight;
         
                     window.scrollTo({ top: adjustedScrollPosition, behavior: 'smooth' });
