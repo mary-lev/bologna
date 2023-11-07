@@ -38,7 +38,6 @@ for (let type of types) {
                 try {
                     let navbarHeight = 0;
                     const currentStyleHref = document.getElementById('pagestyle').getAttribute('href');
-                    console.log(currentStyleHref);
                     if (currentStyleHref.includes('university.css') | currentStyleHref.includes('styles.css')) {
                         navbarHeight = document.querySelector('.navbar').offsetHeight;
                     }
