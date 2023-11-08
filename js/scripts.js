@@ -1,6 +1,7 @@
 const types = ['person', 'place'];
 const personsDetailsElement = document.getElementById('persons-details');
 const placesDetailsElement = document.getElementById('places-details');
+const currentStyleHref = document.getElementById('pagestyle').getAttribute('href');
 
 const detailsElements = {
     'person': personsDetailsElement,
@@ -30,28 +31,28 @@ for (let type of types) {
 
         listItem.addEventListener('click', function () {
             const queue = queues[this.dataset.referenceKey];
-        
+
             if (queue && queue.length > 0) {
                 const el = queue[0]; // only getting the first element
                 el.style.backgroundColor = "yellow";
-        
+
                 try {
                     let navbarHeight = 0;
-                    const currentStyleHref = document.getElementById('pagestyle').getAttribute('href');
+
                     if (['university.css', 'styles.css', 'hippie.css'].some(css => currentStyleHref.includes(css))) {
                         navbarHeight = document.querySelector('.navbar').offsetHeight;
                     }
                     const elementPosition = el.getBoundingClientRect().top + window.scrollY;
                     const adjustedScrollPosition = elementPosition - navbarHeight;
-        
+
                     window.scrollTo({ top: adjustedScrollPosition, behavior: 'smooth' });
-        
+
                 } catch (error) {
                     console.error("Failed to scroll element into view.", error);
                 }
             }
         });
-        
+
 
         detailsElements[type].appendChild(listItem);
     }
