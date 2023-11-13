@@ -1,8 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=MedievalSharp&family=Metamorphous&family=Rosarivo&display=swap");
 
 * {
-    /* background-color: antiquewhite; */
-    /* background-image: url("../assets/img/aldrovandi/paper-gf68c0619c_1920.jpg"); */
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -10,11 +8,7 @@
 
 body {
     display: flex;
-    padding: 40px;
-    padding-left: 340px;
-    /* margin: 10px;
-    border: 10px; */
-    /* background-color: #F3E9D2; */
+    padding: 40px 40px 40px 340px;
     background-image: url("../assets/img/aldrovandi/paper-gf68c0619c_1920.jpg");
     color: #5E503F;
     overflow-x: hidden;
@@ -26,18 +20,13 @@ body {
 }
 
 .container {
-    /* font-family: 'Rosarivo', serif; */
     font-family: 'EB Garamond', serif;
-    /* color:saddlebrown; */
-    /* width: 50%; */
     margin-top: 30px;
 }
 
 .col-lg-6 {
     column-count: 2;
     column-gap: 80px;
-    /* padding: 30px; */
-    /* width: 50%; */
     margin-top: 30px;
 }
 
@@ -47,7 +36,6 @@ header {
 
 .navbar-brand {
     font-family: 'MedievalSharp', cursive;
-    /* font-family: 'Metamorphous', cursive; */
     font-size: 48px;
     font-weight: bold;
     color: saddlebrown;
@@ -67,7 +55,6 @@ header h1 {
 .section {
     display: flex;
     box-sizing: border-box;
-    /* width: 50%; */
     width: 45%; 
     padding: 20px; 
     margin: 20px;
@@ -78,7 +65,6 @@ sup {
 }
 
 i {
-    /* font-style: italic; */
     font-style: normal;
 }
 
@@ -111,14 +97,6 @@ img {
     overflow: auto;
     margin-left: 20px;
 }
-
-
-/* .navbar-brand {
-    font-family: 'Rosarivo', serif;
-    font-variant: small-caps;
-    font-size: 24px;
-    font-weight: bold;
-} */
 
 .nav-link {
     font-family: 'Rosarivo', serif;
@@ -191,8 +169,6 @@ p {
 }
 
 p a {
-    /* text-decoration: underline; */
-    /* font-weight: bold; */
     letter-spacing: 0.3em;
     background-color: none;
 }
@@ -206,7 +182,6 @@ p::first-letter {
     margin: 0 10px 0 0;
     line-height: normal;
     color: sienna;
-    /* border: 2px solid saddlebrown; */
 }
 
 a {
@@ -240,9 +215,6 @@ a:visited {
 }
 
 .text-white-100-no-opacity {
-    /* font-family: "Metamorphous", cursive;
-    color: saddlebrown;
-    text-align: center; */
     display: none;
 }
 
@@ -264,9 +236,12 @@ iframe {
 }
 
 .triangle {
-    height: 360px;
-    /* max-width: 800px; */
+    height: 505px;
+    width: 67%; /* Set a specific width if needed */
     position: relative;
+    margin: auto;
+    margin-bottom: 50px;
+    overflow: hidden; 
 }
 
 .triangle [class*=shape] {
@@ -278,13 +253,11 @@ iframe {
 }
 
 .left-shape {
-    /* --p: polygon(0% 100%, 0% 0%, 100% 0%); */
     --p: polygon(0% 0%, 100% 100%, 0% 100%);
     float: left;
 }
 
 .right-shape {
-    /* --p: polygon(0% 0%, 100% 0%, 100% 100%); */
     --p: polygon(100% 0%, 100% 100%, 0% 100%);
     float: right;
 }
@@ -321,7 +294,6 @@ iframe {
   }
 
 .person, .place {
-    /* font-variant: small-caps; */
     color:sienna;
     font-weight: bold;
 }
@@ -332,31 +304,33 @@ iframe {
 
 #bookmark {
     position: fixed;
-    bottom: 10px; /* Position from the bottom of the page */
-    right: 10px; /* Position from the right of the page */
-    padding: 10px 20px; /* Inner spacing for the content */
-    background-color: #F3E9D2; /* Background color similar to paper */
-    font-family: 'EB Garamond', serif; /* Stylish, readable font */
+    bottom: 10px;
+    right: 10px;
+    padding: 10px 20px;
+    background-color: #F3E9D2;
+    font-family: 'EB Garamond', serif;
     color: sienna;
-    font-size: 14px; /* Size of the text, large enough to be easily read */
-    border: thick double saddlebrown; /* Gives a feeling of an outlined, tangible bookmark */
-    z-index: 1; /* Lower than other content, so it doesn't overlap anything */
-    cursor: pointer; /* Indicates the element is interactive */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Slight shadow for depth effect */
-    text-decoration: none; /* No underline to keep a clean look */
-
-    /* Optional: Adding some rounded corners */
-    border-radius: 5px; /* Slightly rounded corners can make it look more like a physical bookmark */
+    font-size: 14px;
+    border: thick double saddlebrown;
+    z-index: 1;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    text-decoration: none;
+    border-radius: 5px;
 }
-
 
 .dropdown-item-metadata {
     font-variant: normal;
-    font-size: 14px; /* or whatever size you prefer */
+    font-size: 14px; 
 }
 
-
-/* If the bookmark contains a link, you can style the link state too */
 #bookmark:hover {
-    background-color: #e0d5c1; /* slightly darker paper color on hover */
+    background-color: #e0d5c1;
 }
+
+
+.last-line {
+    display: block;
+    text-align: center;
+  }
+  

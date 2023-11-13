@@ -8,10 +8,10 @@
   <meta name="author" content="" />
   <title>Discovering Bologna</title>
   <!-- Favicon-->
-  <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+  <link rel="icon" type="image/x-icon" href="./assets/favicon.ico" />
   <!-- Core theme CSS and switcher for the syles-->
-  <link id="pagestyle" rel="stylesheet" type="text/css" href="css/styles.css">
-  <script src="/js/switcher.js"></script>
+  <link id="pagestyle" rel="stylesheet" type="text/css" href="./css/styles.css">
+  <script src="./js/switcher.js"></script>
   <!-- LeafletJs -->
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.4.0/dist/leaflet.css"
     integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
@@ -25,7 +25,7 @@
   <!-- Responsive navbar-->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container">
-      <a class="navbar-brand" href="index.html">Discovering Bolona</a>
+      <a class="navbar-brand" href="index.html">Discovering Bologna</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span
           class="navbar-toggler-icon"></span></button>
@@ -36,21 +36,21 @@
             <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button"
               data-bs-toggle="dropdown" aria-expanded="false">Sights</a>
             <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
-              <a class="dropdown-item" href="sights/petronio.html">The Church of San Petronio in Bologna</a>
-              <a class="dropdown-item" href="sights/secrets.html">Seven Secrets of Bologna</a>
-              <a class="dropdown-item" href="sights/torri.html">Towers of Bologna</a>
+              <a class="dropdown-item" href="./sights/petronio.html">The Church of San Petronio in Bologna</a>
+              <a class="dropdown-item" href="./sights/secrets.html">Seven Secrets of Bologna</a>
+              <a class="dropdown-item" href="./sights/torri.html">Towers of Bologna</a>
             </ul>
           </li>
 
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown"
-              aria-expanded="false" href="/university/aldrovandi_bio.html">
+              aria-expanded="false" href="./university/aldrovandi_bio.html">
               Aldrovandi
             </a>
             <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
-              <a class="dropdown-item" href="university/aldrovandi_bio.html">Aldrovandi’s Odissey</a>
-              <a class="dropdown-item" href="university/aldrovandi_insects.html">De animalibus insectis</a>
-              <a class="dropdown-item" href="university/aldrovandi_dragons.html">The Dragons of Bologna</a>
+              <a class="dropdown-item" href="./university/aldrovandi_bio.html">Aldrovandi’s Odissey</a>
+              <a class="dropdown-item" href="./university/aldrovandi_insects.html">De animalibus insectis</a>
+              <a class="dropdown-item" href="./university/aldrovandi_dragons.html">The Dragons of Bologna</a>
             </ul>
           </li>
 
@@ -59,9 +59,9 @@
               data-bs-toggle="dropdown" aria-expanded="false">
               Women </a>
             <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
-              <a class="dropdown-item" href="Women/Artemisia_Gentileschi.html">Artemisia Gentileschi</a>
-              <a class="dropdown-item" href="Women/Laura_Bassi.html">Laura Bassi</a>
-              <a class="dropdown-item" href="Women/Morandi_Manzolini.html">Anna Morandi Manzolini</a>
+              <a class="dropdown-item" href="./Women/Artemisia_Gentileschi.html">Artemisia Gentileschi</a>
+              <a class="dropdown-item" href="./Women/Laura_Bassi.html">Laura Bassi</a>
+              <a class="dropdown-item" href="./Women/Morandi_Manzolini.html">Anna Morandi Manzolini</a>
             </ul>
           </li>
 
@@ -74,13 +74,13 @@
               data-bs-toggle="dropdown" aria-expanded="false">
               Style </a>
               <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
-                <a class="dropdown-item" onclick="switchStyle('../css/university.css')">Bootstrap default
-                <a class="dropdown-item" onclick="switchStyle('../css/aldrovandi.css')">Renaissance</a>
-                <a class="dropdown-item" onclick="switchStyle('../css/olga.css')">19th century</a>
-                <a class="dropdown-item" onclick="switchStyle('../css/alka.css')">Art Deco</a>
-                <a class="dropdown-item" onclick="switchStyle('../css/retro.css')">Retro</a>
-                <a class="dropdown-item" onclick="switchStyle('../css/hippie.css')">Hippie</a>
-                <a class="dropdown-item" onclick="switchStyle('../css/barbie.css')">Barbie</a>
+                <a class="dropdown-item" onclick="switchStyle('./css/university.css')">Bootstrap default
+                <a class="dropdown-item" onclick="switchStyle('./css/aldrovandi.css')">Renaissance</a>
+                <a class="dropdown-item" onclick="switchStyle('./css/olga.css')">19th century</a>
+                <a class="dropdown-item" onclick="switchStyle('./css/alka.css')">Art Deco</a>
+                <a class="dropdown-item" onclick="switchStyle('./css/retro.css')">Retro</a>
+                <a class="dropdown-item" onclick="switchStyle('./css/hippie.css')">Hippie</a>
+                <a class="dropdown-item" onclick="switchStyle('./css/barbie.css')">Barbie</a>
               </ul>
         </li>
 
@@ -119,35 +119,9 @@
 
     </div>
   </section>
-  <!-- Image element - set the background image for the header in the line below-->
-  <div class="py-5 bg-image-full" style="background-image: url('assets/img/portici.jpg')">
-    <div style="height: 20rem"></div>
-  </div>
-  <!-- Content section-->
-  <section class="py-5">
-    <div class="container my-5">
-      <div class="row justify-content-center">
-        <div class="col-lg-6">
-          <h2>Do you like what you see?</h2>
-          <p class="lead">Our user-friendly interface allows you to seamlessly navigate between articles and visualize
-            their locations on an interactive map, while our commitment to editorial excellence ensures that every piece
-            is engaging, informative, and accurate. The Discovering Bologna team has meticulously crafted every
-            typographic detail, from font families and sizes to colors, margins, aspect ratios, and captivating images
-            with captivating captions, to truly reflect the graphic theme and ambiance of this captivating city.</p>
-          <p class="mb-0">Join us on this digital adventure and explore the wonders of Bologna like never before, all
-            from the comfort of your own home. Discovering Bologna: Unraveling the secrets of the city, one story at a
-            time.</p>
 
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- Footer-->
-  <footer class="py-5 bg-dark">
-    <div class="container">
-      <p class="m-0 text-center text-white">Created by &copy; DHDK Group 2023</p>
-    </div>
-  </footer>
+
+
   <!-- Bootstrap core JS-->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
 

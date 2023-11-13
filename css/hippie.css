@@ -61,7 +61,7 @@ body {
 /* Add button-like styling to the dropdown toggle */
 .nav-link.dropdown-toggle {
     background-color: #8b4513; /* Saddle Brown background color */
-    padding: 10px 15px;
+    padding: 12px 12px;
     border-radius: 5px;
     transition: background-color 0.3s ease; /* transition for hover effect */
     font-family: 'Special Elite', serif;
@@ -83,12 +83,19 @@ body {
 .dropdown-menu {
     background-color: #8b4513; /* Saddle Brown background color */
     display: none;
+    padding: 12px 12px;
     position: absolute;
-    min-width: 160px;
+    /* min-width: 160px; */
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
 }
 
+.dropdown-menu a {
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    font-size: 24px;
+}
 
 .dropdown-item {
     display: block;
@@ -105,18 +112,8 @@ body {
     background-color: #daa520; /* Goldenrod background color */
 }
 
-.dropdown-item:hover, .dropdown-item:focus {
-    background-color: #daa520; /* Goldenrod background color */
-  }
 
 
-.dropdown-menu a {
-    padding: 12px 12px;
-    text-decoration: none;
-    display: block;
-    text-align: center;
-    font-size: 24px; /* Increased font-size */
-}
 
 .nav-item:hover .dropdown-menu {
     display: block;
