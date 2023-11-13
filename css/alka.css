@@ -21,7 +21,7 @@
 .navbar-brand{
     color: #E21818;
     font-family:'Futura', sans-serif;
-    font-size: 20px;
+    font-size: 30px;
     margin-bottom: 15px;
     text-transform: capitalize;
     text-decoration: double;
@@ -101,6 +101,13 @@ li.nav-item {
 .nav-item:hover .dropdown-menu {
     display: block;
   }
+.dropdown-item{
+    display: block;
+    font-family:'Rosarivo', serif;
+    font-variant: small-caps;
+    margin-left: 5px;
+    padding-inline-start: 25px;
+}
 
 body{
     background-color: #F3E99F;
@@ -140,6 +147,16 @@ p::first-letter {
     line-height: normal;
     color:red;
     border-bottom: 5px solid red;
+}
+.figuresize::first-letter {
+    font-size: 30px;
+    color: rgb(0, 0, 0);
+    font-weight: normal;
+    float: none;
+    margin: 0;
+    vertical-align: baseline;
+    border-bottom: 0;
+
 }
 h2{
     /* font-family: 'Bentham', serif; */
@@ -248,6 +265,10 @@ h1{
     margin-left: 10%;
 }
 
+h6{
+    font-size: xx-large;
+}
+
 .text-white-100-no-opacity::first-letter {
     font-size: 1em;
     float: none;
@@ -282,11 +303,11 @@ h1{
     bottom: 10px; /* Position from the bottom of the page */
     right: 10px; /* Position from the right of the page */
     padding: 10px 20px; /* Inner spacing for the content */
-    background-color: #F3E9D2; /* Background color similar to paper */
-    font-family: 'EB Garamond', serif; /* Stylish, readable font */
-    color: sienna;
-    font-size: 14px; /* Size of the text, large enough to be easily read */
-    border: thick double saddlebrown; /* Gives a feeling of an outlined, tangible bookmark */
+    background-color:  rgb(249 238 106); /* Background color similar to paper */
+    font-family: 'Futura', sans-serif; /* Stylish, readable font */
+    color: black;
+    font-size: 16px; /* Size of the text, large enough to be easily read */
+    border: thick double rgb(255, 0, 0); /* Gives a feeling of an outlined, tangible bookmark */
     z-index: 1; /* Lower than other content, so it doesn't overlap anything */
     cursor: pointer; /* Indicates the element is interactive */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Slight shadow for depth effect */

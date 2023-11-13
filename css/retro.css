@@ -70,6 +70,13 @@ header {
     text-overflow: ellipsis;
     text-align: center;
 }
+.dropdown-item{
+    display: block;
+    font-family:"mostra-nuova", sans-serif;
+    font-variant: small-caps;
+    margin-left: 5px;
+    padding-inline-start: 25px;
+}
 
 header h1 {
     display: none;
@@ -379,11 +386,11 @@ iframe {
     bottom: 10px; /* Position from the bottom of the page */
     right: 10px; /* Position from the right of the page */
     padding: 10px 20px; /* Inner spacing for the content */
-    background-color: #F3E9D2; /* Background color similar to paper */
+    background-color:#7683ccd8; /* Background color similar to paper */
     font-family: 'EB Garamond', serif; /* Stylish, readable font */
-    color: sienna;
-    font-size: 14px; /* Size of the text, large enough to be easily read */
-    border: thick double saddlebrown; /* Gives a feeling of an outlined, tangible bookmark */
+    color: white;
+    font-size: 17px; /* Size of the text, large enough to be easily read */
+    border: thick double rgb(233, 104, 18); /* Gives a feeling of an outlined, tangible bookmark */
     z-index: 1; /* Lower than other content, so it doesn't overlap anything */
     cursor: pointer; /* Indicates the element is interactive */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Slight shadow for depth effect */
