@@ -1,15 +1,22 @@
-@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Emilys+Candy&family=Great+Vibes&family=Srisakdi&display=swap');
+
 
 body {
 background-color: white;
+margin: 0px;
+font-family: "Emilys Candy", serif;
+font-size: medium;
+background-image: url(../assets/barbie/1.gif);
 }
 
 .fs-3 {
-    font-family: "Great Vibes", serif;
+    font-family: "Emilys Candy", serif;
     font-size: 70px;
     font-weight:bold;
     color: #e0218a;
     text-align: center;
+    
 }
 
 .navbar-nav {
@@ -26,12 +33,12 @@ background-color: white;
     display: grid ;
     grid-template-rows: 1fr;
     grid-template-columns: 2fr 10fr;
-    background: #e0218a;
-    /* color: white; */
     text-decoration: none;
-    font-family: "Great Vibes", serif;
+    font-family: "Srisakdi", serif;
     font-size: 30px;
-    background-image: url(../assets/barbie/1.gif);
+    text-align: center;
+    background-color: #e0218a;
+
 }
 
 
@@ -77,9 +84,9 @@ background-color: white;
   /*  
 } */
 
-.navbar-collapse{
+/* .navbar-collapse{
     border: 1px solid red;
-}
+} */
 
 /* .navbar-nav{
     background: pink;
@@ -122,13 +129,12 @@ background-color: white;
     margin-left: 0;
     background-color: #e0218a;   
     opacity: 0.8; 
-    background-image: url(../assets/barbie/1.gif);
   }
 
   .navbar-nav {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
-    background-image: url(../assets/barbie/1.gif);
+  
   }
 
 
@@ -160,3 +166,79 @@ background-color: white;
     /* Optional: Adding some rounded corners */
     border-radius: 5px; /* Slightly rounded corners can make it look more like a physical bookmark */
 }
+
+.col-lg-6 {
+  font-size: 20px;
+  border: 1px solid #000;
+  width: auto;
+  height: 500px;
+  /* Включаем отображение полос прокрутки по горизонтали
+  и по вертикали */
+  overflow: auto;
+  padding: 20px;
+  margin-top: 50px;
+  margin-left: 50px;
+  background-color: white;
+  color: #e572b1;
+}
+
+
+
+/* .col-lg-6 {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-right: 0px;
+  margin-left: 70px;
+  border: yellow solid 5px;
+
+} */
+
+h2 {
+  font-family: "Emilys Candy", serif, bold;
+  border-style: none;
+  font-size: 50px;
+  text-align: center;
+
+}
+
+h3 {
+  text-align: center;
+  font-size: 40px;
+  text-decoration:wavy;
+}
+
+h5 {
+  text-align: right;
+  font-size: 20px;
+
+}
+
+h6 {
+  text-align: right;
+  font-size: 20px;
+
+}
+
+p {
+  display: block;
+  margin-left: 50px;
+  margin-right: 50px;
+  font-size: 20px;
+  font-family: 'Srisakdi', serif;
+  color: #e0218a;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+img {
+  border: 5px solid #e0218a;
+  border-radius: 4px;
+  padding: 5px;
+  width: 150px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+
