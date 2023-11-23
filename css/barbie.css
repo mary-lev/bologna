@@ -8,6 +8,9 @@ background-color: #e0218a9b;
 font-family: "Emilys Candy", serif;
 font-size: medium; */
 background-image: url(../assets/barbie/1.gif);
+background-image: url(../assets/barbie/picture3.jpeg);
+background-size: cover;
+background-repeat: no-repeat;
 }
 
 /* .fs-3 {
@@ -61,13 +64,27 @@ background-image: url(../assets/barbie/1.gif);
 .barbiegif img {
     width: 10rem;
     height: auto;
+    border-radius: 0%;
+}
+
+img {
+  width: 20rem;
+  align-items: center;
+  border-color: whitesmoke;
+  border-radius: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .context header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    gap: 0
+    gap: 0;
+    position: fixed;
+    top: 30rem;
+    display: none;
 }
 
 .context header .text-center{
@@ -169,9 +186,9 @@ background-image: url(../assets/barbie/1.gif);
   margin-bottom: 20px;
 } */
 
-.text-title, .mb-0 {
+/* .text-title, .mb-0 {
   display: none;
-}
+} */
 
 h2 {
   font-family: "Emilys Candy", serif, bold;
@@ -181,6 +198,8 @@ h2 {
   color: #e0218a;
   background-color: white;
   opacity: 0.6;
+  margin-left: 25%;
+  margin-right: 25%;
 
 } 
 
@@ -217,3 +236,24 @@ p {
   padding-right: 50px;
 }
 
+.col-lg-6 {border: 1px solid black;
+  background-color: lightblue;
+  background-image: url(../assets/Olgafont/letter1.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  font-size: 30px;
+  border: #afa85b solid 5px;
+  max-width: 850px;
+  margin: auto;
+  padding: 100px;
+  overflow-y: scroll;
+  height: 20rem;
+}
+.Renaissance-no-display {
+  display: none;
+}
+
+.Renaissance-no-display + section {
+  display: none;
+}
