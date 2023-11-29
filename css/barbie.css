@@ -36,6 +36,12 @@ color: white;
 
 }
 
+.container.my-5 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
 
 .barbiegif {
     display: flex !important;
@@ -135,7 +141,8 @@ img {
 
 #bookmark {
     position: fixed;
-    bottom: 10px; /* Position from the bottom of the page */
+    bottom: 100px; /* Position from the bottom of the page */
+    top: 100px;
     right: 10px; /* Position from the right of the page */
     padding: 10px 20px; /* Inner spacing for the content */
     background-color: white; /* Background color similar to paper */
@@ -147,10 +154,31 @@ img {
     cursor: pointer; /* Indicates the element is interactive */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Slight shadow for depth effect */
     text-decoration: none; /* No underline to keep a clean look */
-
+    width: 200px;
+    height: 500px;
     /* Optional: Adding some rounded corners */
     border-radius: 5px; /* Slightly rounded corners can make it look more like a physical bookmark */
 }
+
+.dropdown-item {
+  display: block;
+  width: 100%;
+  font-weight: 400;
+  /* color: #f5f5dc; */
+  text-align: inherit;
+  text-decoration: none;
+  white-space: nowrap;
+  background-color: transparent;
+}
+
+ul {
+  list-style-type: none;
+  padding-inline-start: 0px;
+}
+
+/* .dropdown-item:hover {
+  background-color: #daa520; Goldenrod background color
+} */
 
 h2 {
   font-family: "Great Vibes", serif, bold;
@@ -203,12 +231,15 @@ p {
   font-size: 30px;
   border: white solid 15px;
   border-radius: 10px;
-  max-width: 850px;
+  max-width: 600px;
   margin: auto;
   padding: 100px;
   overflow-y: scroll;
-  height: 20rem;
+  height: 300px;
 }
+
+
+
 .Renaissance-no-display {
   display: none;
 }

@@ -43,9 +43,30 @@ for (let type of types) {
                         navbarHeight = document.querySelector('.navbar').offsetHeight;
                     }
                     const elementPosition = el.getBoundingClientRect().top + window.scrollY;
-                    const adjustedScrollPosition = elementPosition - navbarHeight;
+                    var adjustedScrollPosition = elementPosition - navbarHeight;
+                    
+                    // default element to scroll is window
+                    var elementToScroll = window;
 
-                    window.scrollTo({ top: adjustedScrollPosition, behavior: 'smooth' });
+                    // if we're in barbie style, setting custom element to scroll
+                    // checking if the file of the style ends with 'barbie.css'
+                    if (document.getElementById('pagestyle').href.endsWith("barbie.css")) {
+
+                        // 1. if we're indeed in the barbie.css style,
+                        //    then we want to scroll 'tv' block instead of the whole window
+                        // 2. searching for 'tv' by classname 'col-lg-6'
+                        // 3. document.getElementsByClassName function only knows how to return multiple elements
+                        //    this is why we add [0] in the end (selecting the first from the collection)
+                        elementToScroll = document.getElementsByClassName('col-lg-6')[0];
+                        // it turns out that we overscroll a little bit if we use default scroll length
+                        // so, we want to make the scroll length smaller
+                        // for example, smaller by elementToScroll.getBoundingClientRect().top pixels
+                        // elementToScroll.getBoundingClientRect().top is how far 'tv' is from the top
+                        adjustedScrollPosition = elementPosition - navbarHeight - elementToScroll.getBoundingClientRect().top;
+                        
+                    }
+
+                    elementToScroll.scrollTo({ top: adjustedScrollPosition, behavior: 'smooth' });
 
                 } catch (error) {
                     console.error("Failed to scroll element into view.", error);
