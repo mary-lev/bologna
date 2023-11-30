@@ -35,8 +35,8 @@
     "name": "Basilica di San Petronio",
     "description": "Historic basilica in Bologna, Italy",
     "coordinates": [
-      44.493889,
-      11.342778
+      44.493128741835335,
+      11.343176623361957
     ]
   },
   {
@@ -61,8 +61,8 @@
     "name": "The oldest “wireless phone”",
     "description": "Palazzo del Podestàin in Bologna, Italy",
     "coordinates": [
-      44.493347,
-      11.343361
+      44.49429563942736,
+      11.343283153731663
     ]
   },
   {
@@ -74,11 +74,11 @@
     ]
   },
   {
-    "name": "A particular inscription",
+    "name": "Panis Vita, Canabis Protectio, Vinum Laetitia",
     "description": "Via dell'Indipendenza 1/5 in Bologna, Italy",
     "coordinates": [
-      44.498258,
-      11.351643
+      44.495322018583934,
+      11.34275948071657
     ]
   },
   {
@@ -93,9 +93,10 @@
     "name": "Neptune’s finger",
     "description": "Fountain of Neptune in Bologna, Italy",
     "coordinates": [
-      44.493889,
-      11.343056
+      44.49448018680439,
+      11.34271656537314
     ]
   }
 ]
+
 
