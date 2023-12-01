@@ -30,5 +30,73 @@
       44.496944,
       11.352778
     ]
+  },
+  {
+    "name": "Basilica di San Petronio",
+    "description": "Historic basilica in Bologna, Italy",
+    "coordinates": [
+      44.493128741835335,
+      11.343176623361957
+    ]
+  },
+  {
+    "name": "Due Torri",
+    "description": "Towers Garisenda e degli Asinelli in Bologna, Italy",
+    "coordinates": [
+      44.49437002218979,
+      11.34673117820081
+    ]
+  },
+  
+  {
+    "name": "The little Venice in Bologna",
+    "description": "Moline canal in Bologna, Italy",
+    "coordinates": [
+      44.489070,
+      11.354743
+    ]
+  },
+
+  {
+    "name": "The oldest “wireless phone”",
+    "description": "Palazzo del Podestàin in Bologna, Italy",
+    "coordinates": [
+      44.49429563942736,
+      11.343283153731663
+    ]
+  },
+  {
+    "name": "Three arrows on the ceiling",
+    "description": "At the entrance of Corte Isolani in Bologna, Italy",
+    "coordinates": [ 
+      44.49323392495262,
+      11.348813585715824
+    ]
+  },
+  {
+    "name": "Panis Vita, Canabis Protectio, Vinum Laetitia",
+    "description": "Via dell'Indipendenza 1/5 in Bologna, Italy",
+    "coordinates": [
+      44.495322018583934,
+      11.34275948071657
+    ]
+  },
+  {
+    "name": "The oldest desk in Bologna",
+    "description": "Palazzo Poggi in Bologna, Italy",
+    "coordinates": [
+      44.495977,
+      11.351013
+    ]
+  },
+  {
+    "name": "Neptune’s finger",
+    "description": "Fountain of Neptune in Bologna, Italy",
+    "coordinates": [
+      44.49448018680439,
+      11.34271656537314
+    ]
   }
 ]
+
+

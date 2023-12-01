@@ -1,15 +1,18 @@
-@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Emilys+Candy&family=Great+Vibes&family=Srisakdi&display=swap');
+
 
 body {
-background-color: white;
+background-color: #e0218a9b;
+background-image: url(../assets/barbie/picture3.jpeg);
+background-size: cover;
+background-repeat: no-repeat;
+color: white;
 }
 
-.fs-3 {
-    font-family: "Great Vibes", serif;
-    font-size: 70px;
-    font-weight:bold;
-    color: #e0218a;
-    text-align: center;
+
+.text-title, .mb-0 {
+  display: none;
 }
 
 .navbar-nav {
@@ -26,16 +29,21 @@ background-color: white;
     display: grid ;
     grid-template-rows: 1fr;
     grid-template-columns: 2fr 10fr;
-    background: #e0218a;
-    /* color: white; */
     text-decoration: none;
-    font-family: "Great Vibes", serif;
-    font-size: 30px;
+    font-family: "Srisakdi", serif;
     background-image: url(../assets/barbie/1.gif);
+    font-size: 30px;
+
+}
+
+.container.my-5 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
 
-.img-barbie {
+.barbiegif {
     display: flex !important;
     /* border: 1px solid red; */
     max-width: fit-content;
@@ -47,16 +55,30 @@ background-color: white;
     /* background-image: url(../assets/barbie/barbie.gif); */
 }
 
-.img-barbie img {
-    width: 5rem;
+.barbiegif img {
+    width: 10rem;
     height: auto;
+    border-radius: 0%;
+}
+
+img {
+  width: 20rem;
+  align-items: center;
+  border-color: whitesmoke;
+  border-radius: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .context header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    gap: 0
+    gap: 0;
+    position: fixed;
+    top: 30rem;
+    display: none;
 }
 
 .context header .text-center{
@@ -65,36 +87,12 @@ background-color: white;
     align-items: center;
     /* border: 1px solid red; */
 }
-    /* grid-template-areas: "navbar-brand navbar-nav navbar-toggler; */
-    /* justify-items: stretch;
-    align-items: stretch; */
-    /* column-gap: 20px;
-} */
 
-/* .navbar-brand {
-    background: #e0218a;
-    /* grid-area: logo; */
-  /*  
-} */
-
-.navbar-collapse{
-    border: 1px solid red;
-}
-
-/* .navbar-nav{
-    background: pink;
-    grid-area: container;
-    display: flex;
-    flex-direction: row;
-    justify-content: start;
-} */
 
 .navbar-toggler {
     display: none;
   
   }
-
-
   .nav-item:hover .dropdown-menu {
     display: grid;
   }
@@ -122,19 +120,18 @@ background-color: white;
     margin-left: 0;
     background-color: #e0218a;   
     opacity: 0.8; 
-    background-image: url(../assets/barbie/1.gif);
   }
 
   .navbar-nav {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
-    background-image: url(../assets/barbie/1.gif);
+  
   }
 
 
   .person, .place {
     /* font-variant: small-caps; */
-    color:sienna;
+    color: #9b6992;;
     font-weight: bold;
 }
 
@@ -144,19 +141,109 @@ background-color: white;
 
 #bookmark {
     position: fixed;
-    bottom: 10px; /* Position from the bottom of the page */
+    bottom: 100px; /* Position from the bottom of the page */
+    top: 100px;
     right: 10px; /* Position from the right of the page */
     padding: 10px 20px; /* Inner spacing for the content */
-    background-color: #F3E9D2; /* Background color similar to paper */
+    background-color: white; /* Background color similar to paper */
     font-family: 'EB Garamond', serif; /* Stylish, readable font */
-    color: sienna;
-    font-size: 14px; /* Size of the text, large enough to be easily read */
-    border: thick double saddlebrown; /* Gives a feeling of an outlined, tangible bookmark */
+    color: #e0218a;
+    font-size: 14px; 
+    border: thick double white; 
     z-index: 1; /* Lower than other content, so it doesn't overlap anything */
     cursor: pointer; /* Indicates the element is interactive */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Slight shadow for depth effect */
     text-decoration: none; /* No underline to keep a clean look */
-
+    width: 200px;
+    height: 500px;
     /* Optional: Adding some rounded corners */
     border-radius: 5px; /* Slightly rounded corners can make it look more like a physical bookmark */
+}
+
+.dropdown-item {
+  display: block;
+  width: 100%;
+  font-weight: 400;
+  /* color: #f5f5dc; */
+  text-align: inherit;
+  text-decoration: none;
+  white-space: nowrap;
+  background-color: transparent;
+}
+
+ul {
+  list-style-type: none;
+  padding-inline-start: 0px;
+}
+
+/* .dropdown-item:hover {
+  background-color: #daa520; Goldenrod background color
+} */
+
+h2 {
+  font-family: "Great Vibes", serif, bold;
+  border-style: none;
+  font-size: 50px;
+  text-align: center;
+  /* color: white; */
+  margin-left: 25%;
+  margin-right: 25%;
+
+} 
+
+h3 {
+  text-align: center;
+  font-size: 40px;
+  text-decoration:wavy;
+  /* color: white */
+  font-family: "Emilys Candy", serif;
+}
+
+h5 {
+  text-align: right;
+  font-size: 20px;
+  /* color: #e0218a; */
+
+}
+
+h6 {
+  text-align: right;
+  font-size: 20px;
+
+} 
+
+p {
+  display: block;
+  margin-left: 50px;
+  margin-right: 50px;
+  font-size: 30px;
+  font-family: 'Srisakdi', serif;
+  color: white;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.col-lg-6 {
+  background-image: url(../assets/barbie/pink2.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  font-size: 30px;
+  border: white solid 15px;
+  border-radius: 10px;
+  max-width: 600px;
+  margin: auto;
+  padding: 100px;
+  overflow-y: scroll;
+  height: 300px;
+}
+
+
+
+.Renaissance-no-display {
+  display: none;
+}
+
+.Renaissance-no-display + section {
+  display: none;
 }
