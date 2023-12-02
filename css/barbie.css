@@ -131,7 +131,7 @@ img {
 
   .person, .place {
     /* font-variant: small-caps; */
-    color: #9b6992;;
+    color: #f25fb0b3;
     font-weight: bold;
 }
 
@@ -146,7 +146,7 @@ img {
     right: 10px; /* Position from the right of the page */
     padding: 10px 20px; /* Inner spacing for the content */
     background-color: white; /* Background color similar to paper */
-    font-family: 'EB Garamond', serif; /* Stylish, readable font */
+    font-family: 'Great Vibes', serif; /* Stylish, readable font */
     color: #e0218a;
     font-size: 14px; 
     border: thick double white; 
