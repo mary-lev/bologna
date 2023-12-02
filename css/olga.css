@@ -104,7 +104,7 @@ body {
     /* background-color: #faebd7; */
     font-family: "Italianno", serif; 
     font-weight: bold;
-    background-image: url(../assets/Olgafont/queen2.jpeg);
+    background-image: url(../assets/Olgafont/queen4.jpeg);
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -119,7 +119,7 @@ body {
 }
 
 .context {
-    /* background-image: url(../assets/Olgafont/queen2.jpeg); */
+    /* background-image: url(../assets/Olgafont/queen4.jpeg); */
     background-size: cover;
     background-repeat: no-repeat;
     padding: 100px;
