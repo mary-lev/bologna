@@ -89,7 +89,7 @@ img {
 
 .navbar {   
     position: fixed;
-    top: 20;
+    top: 20px;
     left: 0;
     height: 100%;
     width: 18%;
@@ -170,7 +170,6 @@ p {
 
 p a {
     letter-spacing: 0.3em;
-    background-color: none;
 }
 
 p::first-letter {
@@ -263,7 +262,7 @@ iframe {
 }
 
 .triangle p {
-    position: center;
+    /* position: center; */
     top: 50px;
 }
 

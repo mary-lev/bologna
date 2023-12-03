@@ -40,7 +40,7 @@ for (let type of types) {
                     let navbarHeight = 0;
                     var currentStyleHref = document.getElementById('pagestyle').getAttribute('href');
 
-                    if (['university.css', 'styles.css', 'hippie.css'].some(css => currentStyleHref.includes(css))) {
+                    if (['styles.css', 'styles.css', 'hippie.css'].some(css => currentStyleHref.includes(css))) {
                         navbarHeight = document.querySelector('.navbar').offsetHeight;
                     }
                     const elementPosition = el.getBoundingClientRect().top + window.scrollY;

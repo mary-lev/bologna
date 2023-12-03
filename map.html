@@ -74,7 +74,7 @@
               data-bs-toggle="dropdown" aria-expanded="false">
               Style </a>
               <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
-                <a class="dropdown-item" onclick="switchStyle('./css/university.css')">Bootstrap default
+                <a class="dropdown-item" onclick="switchStyle('./css/styles.css')">Bootstrap default</a>
                 <a class="dropdown-item" onclick="switchStyle('./css/aldrovandi.css')">Renaissance</a>
                 <a class="dropdown-item" onclick="switchStyle('./css/olga.css')">19th century</a>
                 <a class="dropdown-item" onclick="switchStyle('./css/alka.css')">Art Deco</a>
@@ -124,47 +124,47 @@
 
   <!-- Bootstrap core JS-->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-
   <script>
-
-
-    var map = L.map('map').setView([44.49491, 11.34271], 15);
-
-    var Stadia_StamenWatercolor = L.tileLayer('https://tiles.stadiamaps.com/tiles/stamen_watercolor/{z}/{x}/{y}.{ext}', {
-      minZoom: 1,
-      maxZoom: 16,
-      attribution: '&copy; <a href="https://www.stadiamaps.com/" target="_blank">Stadia Maps</a> &copy; <a href="https://www.stamen.com/" target="_blank">Stamen Design</a> &copy; <a href="https://openmaptiles.org/" target="_blank">OpenMapTiles</a> &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
-      ext: 'jpg'
-    });
-
-    L.tileLayer.provider('Stadia.StamenWatercolor').addTo(map);
-
-    // Function to add a marker for each point
-    function addMarker(point, open) {
-      var marker = L.marker(point.coordinates).addTo(map);
-      var popup = marker.bindPopup(`<b>${point.name}</b><br />${point.description}`);
-
-      // Check if this popup should be opened immediately
-      if (open) {
-        popup.openPopup();
-      }
-    }
-
-    // Fetch the data from the external file
-    fetch('data.json')
-      .then(response => response.json())  // Parse the JSON from the response
-      .then(data => {
-        // Once the data is loaded, add a marker for each point
-        // Open the first popup immediately
-        for (let i = 0; i < data.length; i++) {
-          addMarker(data[i], i === 0);  // Open only the first popup
-        }
-      })
-      .catch(error => {
-        console.error('Error fetching data: ', error);
+    // Wait for the window to load completely
+    window.addEventListener('load', function() {
+      var map = L.map('map').setView([44.49491, 11.34271], 15);
+  
+      var Stadia_StamenWatercolor = L.tileLayer('https://tiles.stadiamaps.com/tiles/stamen_watercolor/{z}/{x}/{y}.{ext}', {
+        minZoom: 1,
+        maxZoom: 16,
+        attribution: '&copy; <a href="https://www.stadiamaps.com/" target="_blank">Stadia Maps</a> &copy; <a href="https://www.stamen.com/" target="_blank">Stamen Design</a> &copy; <a href="https://openmaptiles.org/" target="_blank">OpenMapTiles</a> &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+        ext: 'jpg'
       });
-
+  
+      L.tileLayer.provider('Stadia.StamenWatercolor').addTo(map);
+  
+      // Function to add a marker for each point
+      function addMarker(point, open) {
+        var marker = L.marker(point.coordinates).addTo(map);
+        var popup = marker.bindPopup(`<b>${point.name}</b><br />${point.description}`);
+  
+        // Check if this popup should be opened immediately
+        if (open) {
+          popup.openPopup();
+        }
+      }
+  
+      // Fetch the data from the external file
+      fetch('data.json')
+        .then(response => response.json())  // Parse the JSON from the response
+        .then(data => {
+          // Once the data is loaded, add a marker for each point
+          // Open the first popup immediately
+          for (let i = 0; i < data.length; i++) {
+            addMarker(data[i], i === 0);  // Open only the first popup
+          }
+        })
+        .catch(error => {
+          console.error('Error fetching data: ', error);
+        });
+    });
   </script>
+  
 </body>
 
 </html>

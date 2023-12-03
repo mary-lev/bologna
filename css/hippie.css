@@ -27,8 +27,8 @@ body {
     text-decoration: none;
     font-family: 'Spicy Rice', cursive;
     text-align: justify;
-    display: flex; /* This sets the display to flex */
-    justify-content: center; /* This separates the brand from the rest */
+    display: flex;
+    justify-content: center;
 }
 
 .navbar-nav {
@@ -46,7 +46,6 @@ body {
     opacity: 1;
 }
 
-/* Add button-like styling to the dropdown toggle */
 .nav-link.dropdown-toggle {
     background-color: #8b4513; /* Saddle Brown background color */
     padding: 12px 12px;
@@ -180,7 +179,6 @@ h6 {
     font-size: 18px;
 }
 
-/* Vintage style buttons */
 .button {
     background-color: #8b4513; /* Saddle Brown */
     border: none;
@@ -197,8 +195,6 @@ h6 {
     background-color: #daa520; /* Goldenrod */
 }
 
-
-/* Footer style */
 .footer {
     background-color: #228b22; /* Forest green */
     color: #f5f5dc; /* Beige */
@@ -223,8 +219,8 @@ h6 {
     margin: 5px;
     border: 5px solid #8b4513; /* Saddle Brown */
     border-radius: 8px;
-    width: 30%; /* override the width if it's set to 100% */
-    height: auto; /* maintain aspect ratio */
+    width: 30%;
+    height: auto;
 }
 
 .centered-image {
@@ -251,13 +247,13 @@ h6 {
 
 #bookmark {
     position: fixed;
-    bottom: 20px; /* Position from the bottom of the page */
-    right: 20px; /* Position from the right of the page */
-    padding: 10px 20px; /* Inner spacing for the content */
-    background-color: #8b4513; /* Saddle Brown background for consistency */
-    color: #f5f5dc; /* Beige text color that matches your design */
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    background-color: #8b4513; /* Saddle Brown background */
+    color: #f5f5dc; /* Beige text color */
     font-family: 'Special Elite', serif; /* A typewriter-style font for the vintage look */
-    font-size: 24px; /* Larger font size for readability */
+    font-size: 24px;
     border-radius: 5px; /* Rounded corners for a softer, more tactile look */
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); /* Slight shadow for a 3D effect */
     z-index: 1020; /* High z-index to ensure it's above most other elements */
@@ -271,5 +267,13 @@ h6 {
 
 .dropdown-item-metadata {
     font-variant: normal;
-    font-size: 14px; /* or whatever size you prefer */
+    font-size: 14px;
+}
+
+#map {
+    width: 1000px;
+    height: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
 }
