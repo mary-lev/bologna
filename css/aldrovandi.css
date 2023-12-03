@@ -355,6 +355,11 @@ iframe {
         margin-top: 0px;
     }
 
+    .col-lg-6 {
+        column-count: 1; /* Change to a single column */
+        width: 100%; /* Adjust the width if necessary */
+    }
+
     img {
         width: 100%;
     }
@@ -392,7 +397,7 @@ iframe {
         display: inline-flex; /* Show the hamburger icon */
         margin-left: 10px; 
         background: transparent;
-        position:fixed;
+        position: absolute;
         border: none;
         background-image: url("../assets/img/aldrovandi/menu-up-saddle.svg");
         background-size: contain;
@@ -425,11 +430,6 @@ iframe {
     .navbar-nav {
         display: none;
         flex-direction: column; /* Stack the menu items vertically */
-    }
-
-    .col-lg-6 {
-        column-count: 1; /* Change to a single column */
-        width: 100%; /* Adjust the width if necessary */
     }
 
     /* Adjust any other multi-column layouts as needed */

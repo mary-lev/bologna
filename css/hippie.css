@@ -277,3 +277,123 @@ h6 {
     margin-right: auto;
     display: block;
 }
+
+
+@media screen and (max-width: 768px) {
+    body {
+        padding: 10px; 
+        display: block;
+    }
+
+    .container {
+        display: block;
+        width: 100%;
+        margin-top: 0px;
+    }
+
+    .col-lg-6 {
+        column-count: 1; /* Change to a single column */
+        width: 100%; /* Adjust the width if necessary */
+    }
+
+    p {
+        font-size: 16px; /* Adjust font size */
+        margin: 10px 10px 10px 10px;
+    }
+
+    .navbar {
+        align-items: center;
+        justify-content: space-between; /* Align brand on left and toggler on right */
+        padding: 1.5rem;
+        position:relative;
+        margin: 0 0 5px 5px;
+    }
+
+    .navbar-nav {
+        display: none;
+        flex-direction: column; /* Stack the menu items vertically */
+    }
+
+    .navbar-brand {
+        font-size: 1.25rem; /* Smaller font size */
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+        width: 60%; /* Limit width to avoid overflow */
+        display: inline-block;
+    }
+
+    .navbar-toggler {
+        display: inline-flex; /* Show the hamburger icon */
+        margin-left: 10px; 
+        background: transparent;
+        position: absolute;
+        border: none;
+        background-image: url("../assets/img/aldrovandi/menu-up-saddle.svg");
+        background-size: contain;
+        background-repeat: no-repeat; 
+        background-position: center;
+        width: 25px; 
+        height: 25px; 
+    }
+
+    .navbar-collapse {
+        display: flex; /* Initially hide the collapsed menu */
+    }
+
+    .navbar-collapse.collapsing,
+    .navbar-collapse.show,
+    .navbar-expand-lg {
+        display: block; /* Display the menu when toggled */
+        width: 100%;
+        text-align: center;
+    }
+
+    .navbar-collapse.show .navbar-nav,
+    .navbar-collapse.collapsing .navbar-nav {
+        /* Show the navbar-nav when navbar is toggled */
+        display: flex;
+        flex-direction: column;
+        width: 100%; /* Full width */
+    }
+
+    .nav-link.dropdown-toggle {
+        font-size: small;
+    }
+
+    .navbar-nav .nav-link {
+        color: #f5f5dc; /* Beige text color */
+        border-radius: 5px;
+        padding: 2px 2px;
+        background-color: #8b4513; /* Saddle Brown background color */
+        opacity: 1;
+    }
+
+    .nav-item .nav-item a {
+        font-size: 12px;
+    }
+
+
+    h1, h2, h3, h4, h5, h6 {
+        font-size: smaller; /* Adjust heading sizes for mobile */
+    }
+
+    .img, .img-fluid {
+        width: 100%; /* Full width images on mobile */
+        height: auto; /* Maintain aspect ratio */
+    }
+
+    #map {
+        width: 100%; /* Full width map on mobile */
+        height: auto; /* Adjust height as necessary */
+    }
+
+    #bookmark {
+        display: none; /* Hide bookmark on mobile */
+    }
+
+    .Renaissance-no-display {
+        display: none;
+    }
+
+}
