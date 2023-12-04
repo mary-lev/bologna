@@ -24,7 +24,6 @@ for (let type of types) {
         queues[key].push(elements[i]);
 
         const listItem = document.createElement('span');
-        // listItem.className = 'dropdown-item';
         listItem.className = 'dropdown-item dropdown-item-metadata';
         listItem.innerHTML = elements[i].innerHTML;
         listItem.dataset.referenceKey = key;

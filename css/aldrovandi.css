@@ -236,7 +236,7 @@ iframe {
 
 .triangle {
     height: 505px;
-    width: 67%; /* Set a specific width if needed */
+    width: 67%;
     position: relative;
     margin: auto;
     margin-bottom: 50px;
@@ -357,7 +357,7 @@ iframe {
 
     .col-lg-6 {
         column-count: 1; /* Change to a single column */
-        width: 100%; /* Adjust the width if necessary */
+        width: 100%;
     }
 
     img {
@@ -375,7 +375,7 @@ iframe {
 
     .navbar {
         align-items: center;
-        justify-content: space-between; /* Align brand on left and toggler on right */
+        justify-content: space-between; 
         padding: 1.5rem;
         position: relative;
         margin: 0 0 5px 5px;
@@ -387,11 +387,11 @@ iframe {
     }
 
     .navbar-brand {
-        font-size: 1.25rem; /* Smaller font size */
+        font-size: 1.25rem;
         text-overflow: ellipsis;
         white-space: nowrap;
         overflow: hidden;
-        width: 60%; /* Limit width to avoid overflow */
+        width: 60%;
     }
 
     .navbar-toggler {
@@ -428,9 +428,8 @@ iframe {
         width: 100%; /* Full width */
     }
 
-    /* Adjust any other multi-column layouts as needed */
     .section, .triangle, .one-column {
-        width: 100%; /* Full width for mobile */
+        width: 100%; 
     }
 
     #bookmark {
