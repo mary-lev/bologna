@@ -364,7 +364,7 @@ iframe {
         width: 100%;
     }
 
-    h2, h3, h4 {
+    h1, h2, h3, h4, h5, .author {
         font-size: smaller;
         margin-top: 10px;
     }
@@ -393,8 +393,6 @@ iframe {
         overflow: hidden;
         width: 60%; /* Limit width to avoid overflow */
     }
-
-    
 
     .navbar-toggler {
         display: inline-flex; /* Show the hamburger icon */
@@ -428,11 +426,6 @@ iframe {
         display: flex;
         flex-direction: column;
         width: 100%; /* Full width */
-    }
-
-    .navbar-nav {
-        display: none;
-        flex-direction: column; /* Stack the menu items vertically */
     }
 
     /* Adjust any other multi-column layouts as needed */
