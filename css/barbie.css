@@ -43,23 +43,8 @@ color: white;
 }
 
 
-.barbiegif {
-    display: flex !important;
-    /* border: 1px solid red; */
-    max-width: fit-content;
-    max-height: fit-content;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    /* background-color: red !important; */
-    /* background-image: url(../assets/barbie/barbie.gif); */
-}
 
-.barbiegif img {
-    width: 10rem;
-    height: auto;
-    border-radius: 0%;
-}
+
 
 img {
   width: 20rem;
@@ -130,8 +115,7 @@ img {
 
 
   .person, .place {
-    /* font-variant: small-caps; */
-    color: #f25fb0b3;
+    color: rgb(129, 13, 119);
     font-weight: bold;
 }
 
@@ -139,32 +123,34 @@ img {
     font-size: 6px;
 }
 
+#persons-details {
+  color: rgb(129, 13, 119);
+}
+
 #bookmark {
     position: fixed;
-    bottom: 100px; /* Position from the bottom of the page */
-    top: 100px;
-    right: 10px; /* Position from the right of the page */
-    padding: 10px 20px; /* Inner spacing for the content */
-    background-color: white; /* Background color similar to paper */
-    font-family: 'Great Vibes', serif; /* Stylish, readable font */
+    bottom: 10px;
+    /* top: 100px; */
+    right: 10px; 
+    padding: 10px 20px;
+    background-color: white; 
+    font-family: 'Great Vibes', serif; 
     color: #e0218a;
     font-size: 14px; 
     border: thick double white; 
-    z-index: 1; /* Lower than other content, so it doesn't overlap anything */
-    cursor: pointer; /* Indicates the element is interactive */
+    z-index: 1; /
+    cursor: pointer; 
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Slight shadow for depth effect */
     text-decoration: none; /* No underline to keep a clean look */
     width: 200px;
-    height: 500px;
-    /* Optional: Adding some rounded corners */
-    border-radius: 5px; /* Slightly rounded corners can make it look more like a physical bookmark */
+    height: 360px;
+    border-radius: 5px; 
 }
 
 .dropdown-item {
   display: block;
   width: 100%;
   font-weight: 400;
-  /* color: #f5f5dc; */
   text-align: inherit;
   text-decoration: none;
   white-space: nowrap;
@@ -176,16 +162,12 @@ ul {
   padding-inline-start: 0px;
 }
 
-/* .dropdown-item:hover {
-  background-color: #daa520; Goldenrod background color
-} */
 
 h2 {
   font-family: "Great Vibes", serif, bold;
   border-style: none;
   font-size: 50px;
   text-align: center;
-  /* color: white; */
   margin-left: 25%;
   margin-right: 25%;
 
@@ -195,14 +177,12 @@ h3 {
   text-align: center;
   font-size: 40px;
   text-decoration:wavy;
-  /* color: white */
   font-family: "Emilys Candy", serif;
 }
 
 h5 {
   text-align: right;
   font-size: 20px;
-  /* color: #e0218a; */
 
 }
 
@@ -229,8 +209,8 @@ p {
   background-repeat: no-repeat;
   background-attachment: fixed;
   font-size: 30px;
-  border: white solid 15px;
-  border-radius: 10px;
+  border: white solid 10px;
+  border-radius: 13px;
   max-width: 600px;
   margin: auto;
   padding: 100px;
