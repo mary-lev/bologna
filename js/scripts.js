@@ -43,8 +43,8 @@ for (let type of types) {
                     if (['styles.css', 'styles.css', 'hippie.css'].some(css => currentStyleHref.includes(css))) {
                         navbarHeight = document.querySelector('.navbar').offsetHeight;
                     }
-                    const elementPosition = el.getBoundingClientRect().top + window.scrollY;
-                    const adjustedScrollPosition = elementPosition - navbarHeight;
+                    let elementPosition = el.getBoundingClientRect().top + window.scrollY;
+                    let adjustedScrollPosition = elementPosition - navbarHeight;
                     
                     // default element to scroll is window
                     var elementToScroll = window;
