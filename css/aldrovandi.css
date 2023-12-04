@@ -366,6 +366,7 @@ iframe {
 
     h2, h3, h4 {
         font-size: smaller;
+        margin-top: 10px;
     }
 
     .triangle, .section {
@@ -376,8 +377,13 @@ iframe {
         align-items: center;
         justify-content: space-between; /* Align brand on left and toggler on right */
         padding: 1.5rem;
-        position:relative;
+        position: relative;
         margin: 0 0 5px 5px;
+    }
+
+    .navbar-nav {
+        display: none; /* Hide the regular menu items */
+        flex-direction: column; /* Stack the items vertically */
     }
 
     .navbar-brand {
@@ -388,10 +394,7 @@ iframe {
         width: 60%; /* Limit width to avoid overflow */
     }
 
-    .navbar-nav {
-        display: none; /* Hide the regular menu items */
-        flex-direction: column; /* Stack the items vertically */
-    }
+    
 
     .navbar-toggler {
         display: inline-flex; /* Show the hamburger icon */
