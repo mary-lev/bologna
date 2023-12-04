@@ -1,17 +1,9 @@
-/* @font-face {
-    font-family: myfont;
-    src: url(Augustea.otf);
-  }
 
-header h2{
-    font-family: myfont;
-  } */
-  /* @import url("https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=MedievalSharp&family=Metamorphous&family=Rosarivo&display=swap"); */
-
-  @import url("https://use.typekit.net/ztd4puk.css");
 
   @import url("https://use.typekit.net/ztd4puk.css");
   @import url("https://use.typekit.net/ztd4puk.css");
+  @import url("https://use.typekit.net/ztd4puk.css");
+
 * {
     background-color:#7683ccd8; 
     /* background-image: url("../assets/img/aldrovandi/paper-gf68c0619c_1920.jpg"); */
@@ -60,7 +52,6 @@ header {
     font-family: "mostra-nuova", sans-serif;
     font-weight: 400;
     font-style: normal;
-    /* font-family: 'Metamorphous', cursive; */
     font-size: 48px;
     font-weight: bold;
     color: rgb(2, 2, 2);
@@ -174,27 +165,6 @@ h2 {
     font-style: normal;
 }
 
-/* h3 {
-    text-align: center;
-    margin-top: 20px;
-    margin-bottom: 10px;
-    color: saddlebrown;
-    font-weight: bold;
-    font-variant: small-caps;
-    font-size: 24px;
-    font-family: 'Metamorphous', serif;
-} */
-
-/* h4 {
-    text-align: center;
-    margin-top: 20px;
-    margin-bottom: 10px;
-    color: saddlebrown;
-    font-weight: bold;
-    font-variant: small-caps;
-    font-size: 16px;
-    font-family: 'Metamorphous', serif;
-} */
 
 p {
     font-size: 18px;
@@ -266,18 +236,11 @@ a:visited {
 }
 
 .text-white-100-no-opacity {
-    /* font-family: "Metamorphous", cursive;
-    color: saddlebrown;
-    text-align: center; */
     display: none;
 }
 
 
-/* .vignette {
-    height: 200px;
-    color: saddlebrown;
-    display: none;
-} */
+
 
 iframe {
     display: none;
@@ -304,13 +267,13 @@ iframe {
 }
 
 .left-shape {
-    /* --p: polygon(0% 100%, 0% 0%, 100% 0%); */
+    
     --p: polygon(0% 0%, 100% 100%, 0% 100%);
     float: left;
 }
 
 .right-shape {
-    /* --p: polygon(0% 0%, 100% 0%, 100% 100%); */
+    
     --p: polygon(100% 0%, 100% 100%, 0% 100%);
     float: right;
 }
