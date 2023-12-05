@@ -333,6 +333,10 @@ iframe {
     text-align: center;
   }
 
+#map {
+    display: flex;
+    align-items: center;
+}
 
 
 /* Desktop view */
